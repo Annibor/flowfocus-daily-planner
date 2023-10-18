@@ -11,9 +11,18 @@ console.log(itemsArray);
 /*-- ADD TO LIST -- */
 /*-----------------*/
 
+/*-- WHEN CKLICKING THE BUTTON-- */
 document.querySelector("#enter").addEventListener("click", () => {
   const item = document.querySelector("#item");
   createItem(item);
+});
+
+/*-- WHEN PRESSING ENTER BUTTON-- */
+document.querySelector("#item").addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    const item = document.querySelector("#item");
+    createItem(item);
+  }
 });
 
 /*-- SHOW ON SCREEN -- */
