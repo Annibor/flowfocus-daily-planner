@@ -35,6 +35,28 @@ function displayItems() {
   </div> `;
   }
   document.querySelector(".to-do-list").innerHTML = items;
+
+  /*-- FOR EDIT & DELETE BUTTONS--*/
+  activateDeleteListeners();
+  activateEditListeners();
+  activateSaveListeners();
+  activateCancelListeners();
+}
+
+/*-- FUNCTION FOR DELETE BUTTONS--*/
+function activateDeleteListeners() {
+  let deleteBtn = document.querySelectorAll(".deleteBtn");
+  deleteBtn.forEach((db, i) => {
+    db.addEventListener("click", () => {
+      deleteItem(i);
+    });
+  });
+}
+
+function deleteItem(i) {
+  itemsArray.splice(i, 1);
+  localStorage.setItem("items", JSON.stringify(itemsArray));
+  location.reload();
 }
 
 function createItem(item) {
