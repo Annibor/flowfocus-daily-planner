@@ -16,6 +16,14 @@ document.querySelector("#enter").addEventListener("click", () => {
   createItem(item);
 });
 
+/*-- SHOW ON SCREEN -- */
+function displayItems(){
+  let items = ""
+  for(let i = 0 ; i < itemsArray.length; i++){
+    
+  }
+}
+
 function createItem(item) {
   itemsArray.push(item.value);
   localStorage.setItem("items", JSON.stringify(itemsArray));
