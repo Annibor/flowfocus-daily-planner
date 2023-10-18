@@ -1,4 +1,13 @@
 /*-----------------*/
+/*-- CHECK LOCAL STORAGE -- */
+/*------------------*/
+const itemsArray = localStorage.getItem("items")
+  ? JSON.parse(localStorage.getItem("items"))
+  : [];
+
+console.log(itemsArray);
+
+/*-----------------*/
 /*-- DISPLAY DATE -- */
 /*------------------*/
 function displayDate() {
