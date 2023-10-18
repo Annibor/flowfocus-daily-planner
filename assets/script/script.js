@@ -72,7 +72,20 @@ function activateSaveListeners() {
   const inputs = document.querySelectorAll(".input-controller textarea");
   saveBtn.forEach((sb, i) => {
     sb.addEventListener("click", () => {
-      update < item(inputs[i].value, i);
+      updateItem(inputs[i].value, i);
+    });
+  });
+}
+
+/*-- FUNCTION FOR CANCEL BUTTONS--*/
+function activateCancelListeners() {
+  const cancelBtn = document.querySelectorAll(".cancelBtn");
+  const updateController = document.querySelectorAll(".update-controller");
+  const inputs = document.querySelectorAll(".input-controller textarea");
+  cancelBtn.forEach((cb, i) => {
+    cb.addEventListener("click", () => {
+      updateController[i].style.display = "none";
+      inputs[i].disabled = true;
     });
   });
 }
