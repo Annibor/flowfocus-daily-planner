@@ -34,6 +34,7 @@ function displayItems() {
     </div>
   </div> `;
   }
+  document.querySelector(".to-do-list").innerHTML = items;
 }
 
 function createItem(item) {
@@ -54,4 +55,5 @@ function displayDate() {
 
 window.onload = function () {
   displayDate();
+  displayItems();
 };
