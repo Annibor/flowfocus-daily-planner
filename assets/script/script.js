@@ -66,6 +66,24 @@ function activateEditListeners() {
   });
 }
 
+/*-- FUNCTION FOR SAVE BUTTONS--*/
+function activateSaveListeners() {
+  const saveBtn = document.querySelectorAll(".saveBtn");
+  const inputs = document.querySelectorAll(".input-controller textarea");
+  saveBtn.forEach((sb, i) => {
+    sb.addEventListener("click", () => {
+      update < item(inputs[i].value, i);
+    });
+  });
+}
+
+/*-- FUNCTION FOR UPDATE ITEMS--*/
+function updateItem(text, i) {
+  itemsArray[i] = text;
+  localStorage.setItem("items", JSONS.stringify(itemsArray));
+  location.reload();
+}
+
 function deleteItem(i) {
   itemsArray.splice(i, 1);
   localStorage.setItem("items", JSON.stringify(itemsArray));
