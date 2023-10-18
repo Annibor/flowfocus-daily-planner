@@ -30,3 +30,12 @@ body {
 }
 
 
+/* -----------------------*/
+/* --- SLIDE TIPS --- */
+/* -----------------------*/
+
+.tips-slider {
+  max-width: 100rem;
+  margin: 0 auto;
+  position: relative;
+}

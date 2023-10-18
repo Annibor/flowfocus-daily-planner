@@ -12,6 +12,14 @@ console.log(itemsArray);
 /*-----------------*/
 
 /*-----------------*/
+/*-- SLIDE TIPS -- */
+/*-----------------*/
+const slides = document.querySelectorAll(".slide");
+
+slides.forEach((s, i) => s.style.transform = `translateX()`)
+
+
+/*-----------------*/
 /*-- ADD TO LIST -- */
 /*-----------------*/
 
