@@ -16,8 +16,7 @@ console.log(itemsArray);
 /*-----------------*/
 const slides = document.querySelectorAll(".slide");
 
-slides.forEach((s, i) => s.style.transform = `translateX()`)
-
+slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
 
 /*-----------------*/
 /*-- ADD TO LIST -- */
