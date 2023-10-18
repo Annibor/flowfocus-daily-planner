@@ -8,6 +8,10 @@ const itemsArray = localStorage.getItem("items")
 console.log(itemsArray);
 
 /*-----------------*/
+/*-- AUDIO--*/
+/*-----------------*/
+
+/*-----------------*/
 /*-- ADD TO LIST -- */
 /*-----------------*/
 
