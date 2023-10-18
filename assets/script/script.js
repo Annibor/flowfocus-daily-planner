@@ -8,6 +8,21 @@ const itemsArray = localStorage.getItem("items")
 console.log(itemsArray);
 
 /*-----------------*/
+/*-- ADD TO LIST -- */
+/*-----------------*/
+
+document.querySelector("#enter").addEventListener("click", () => {
+  const item = document.querySelector("#item");
+  createItem(item);
+});
+
+function createItem(item) {
+  itemsArray.push(item.value);
+  localStorage.setItem("items", JSON.stringify(itemsArray));
+  location.reload();
+}
+
+/*-----------------*/
 /*-- DISPLAY DATE -- */
 /*------------------*/
 function displayDate() {
