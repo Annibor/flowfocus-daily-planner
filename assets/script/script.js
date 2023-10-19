@@ -15,8 +15,21 @@ console.log(itemsArray);
 /*-- SLIDE TIPS -- */
 /*-----------------*/
 const slides = document.querySelectorAll(".slide");
+/*-- SLIDE BTNS -- */
+const leftBtn = document.querySelector(".slider__btn--left");
+const rightBtn = document.querySelector(".slider__btn--right");
+
+let currentSlide = 0;
 
 slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
+
+/*-- SLIDE BTNS FUNCTION NEXT SLIDE-- */
+rightBtn.addEventListener("click", function () {
+  currentSlide++;
+  slides.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - currentSlide)}%)`)
+  );
+});
 
 /*-----------------*/
 /*-- ADD TO LIST -- */
