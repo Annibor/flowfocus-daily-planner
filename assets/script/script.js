@@ -35,6 +35,18 @@ const createDots = function () {
 };
 createDots();
 
+/*-- ACTIVE DOT -- */
+const activateDot = function (slide) {
+  document
+    .querySelectorAll(".dots__dot")
+    .forEach((dot) => dot.classList.remove("dots__dot--active"));
+
+  document
+    .querySelector(`.dots__dot [data-slide="${slide}"]`)
+    .classList.add("dots__dot--active");
+};
+/*-- MAKE ACTIVE DOT OPEN PAGE-- */
+activateDot(0);
 
 const goToSlide = function (slide) {
   slides.forEach(
@@ -52,23 +64,37 @@ const nextSlide = function () {
   }
 
   goToSlide(currentSlide);
+  activateDot(currentSlide);
 };
 
 /*-- SLIDE BTNS FUNCTION PREVIOUS SLIDE-- */
 const previousSlide = function () {
   if (currentSlide === 0) {
-    currentSlide;
+    currentSlide = slideMax - 1;
+  } else {
+    currentSlide--;
   }
-  currentSlide--;
   goToSlide(currentSlide);
+  activateDot(currentSlide);
 };
 
+/*-- -- */
+
+/*-- EVENTLISTENERS FOR SLIDE-- */
 rightBtn.addEventListener("click", nextSlide);
 leftBtn.addEventListener("click", previousSlide);
 
 document.addEventListener("keydown", function (e) {
   e.key === "ArrowLeft" && previousSlide();
   e.key === "ArrowRight" && nextSlide();
+});
+
+dotContainer.addEventListener("click", function (e) {
+  if (e.target.classList.contains("dots__dot")) {
+    const { slide } = e.target.dataset;
+    goToSlide(slide);
+    activateDot(slide);
+  }
 });
 
 /*-----------------*/
