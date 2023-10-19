@@ -40,8 +40,22 @@ const nextSlide = function () {
   goToSlide(currentSlide);
 };
 
+/*-- SLIDE BTNS FUNCTION PREVIOUS SLIDE-- */
+const previousSlide = function () {
+  if (currentSlide === 0) {
+    currentSlide;
+  }
+  currentSlide--;
+  goToSlide(currentSlide);
+};
 
 rightBtn.addEventListener("click", nextSlide);
+leftBtn.addEventListener("click", previousSlide);
+
+document.addEventListener("keydown", function (e) {
+  e.key === "ArrowLeft" && previousSlide();
+  e.key === "ArrowRight" && nextSlide();
+});
 
 /*-----------------*/
 /*-- ADD TO LIST -- */
