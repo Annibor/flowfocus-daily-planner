@@ -22,20 +22,26 @@ const rightBtn = document.querySelector(".slider__btn--right");
 let currentSlide = 0;
 const slideMax = slides.length;
 
-slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
+const goToSlide = function (slide) {
+  slides.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+  );
+};
+goToSlide(0);
 
 /*-- SLIDE BTNS FUNCTION NEXT SLIDE-- */
-rightBtn.addEventListener("click", function () {
+const nextSlide = function () {
   if (currentSlide === slideMax - 1) {
     currentSlide = 0;
   } else {
     currentSlide++;
   }
 
-  slides.forEach(
-    (s, i) => (s.style.transform = `translateX(${100 * (i - currentSlide)}%)`)
-  );
-});
+  goToSlide(currentSlide);
+};
+
+
+rightBtn.addEventListener("click", nextSlide);
 
 /*-----------------*/
 /*-- ADD TO LIST -- */
