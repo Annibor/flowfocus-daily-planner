@@ -20,12 +20,18 @@ const leftBtn = document.querySelector(".slider__btn--left");
 const rightBtn = document.querySelector(".slider__btn--right");
 
 let currentSlide = 0;
+const slideMax = slides.length;
 
 slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
 
 /*-- SLIDE BTNS FUNCTION NEXT SLIDE-- */
 rightBtn.addEventListener("click", function () {
-  currentSlide++;
+  if (currentSlide === slideMax - 1) {
+    currentSlide = 0;
+  } else {
+    currentSlide++;
+  }
+
   slides.forEach(
     (s, i) => (s.style.transform = `translateX(${100 * (i - currentSlide)}%)`)
   );
