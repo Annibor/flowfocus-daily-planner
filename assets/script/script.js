@@ -18,9 +18,23 @@ const slides = document.querySelectorAll(".slide");
 /*-- SLIDE BTNS -- */
 const leftBtn = document.querySelector(".slider__btn--left");
 const rightBtn = document.querySelector(".slider__btn--right");
+/*-- SLIDE DOTS -- */
+const dotContainer = document.querySelector(".dots");
 
 let currentSlide = 0;
 const slideMax = slides.length;
+
+/*-- CREATE DOTS -- */
+const createDots = function () {
+  slides.forEach(function (s, i) {
+    dotContainer.insertAdjacentHTML(
+      "beforeend",
+      `<button class="dots__dot" data-slide="${i}"></button>`
+    );
+  });
+};
+createDots();
+
 
 const goToSlide = function (slide) {
   slides.forEach(
