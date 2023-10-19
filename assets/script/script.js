@@ -1,101 +1,106 @@
 /*-----------------*/
 /*-- CHECK LOCAL STORAGE -- */
 /*------------------*/
-const itemsArray = localStorage.getItem("items")
-  ? JSON.parse(localStorage.getItem("items"))
+const itemsArray = localStorage.getItem("items")?JSON.parse(localStorage.getItem("items"))
   : [];
-
-console.log(itemsArray);
 
 /*-----------------*/
 /*-- AUDIO--*/
 /*-----------------*/
 
 /*-----------------*/
-/*-- SLIDE TIPS -- */
+/*-- SLIDER TIPS -- */
 /*-----------------*/
-const slides = document.querySelectorAll(".slide");
-/*-- SLIDE BTNS -- */
-const leftBtn = document.querySelector(".slider__btn--left");
-const rightBtn = document.querySelector(".slider__btn--right");
-/*-- SLIDE DOTS -- */
-const dotContainer = document.querySelector(".dots");
+/*-- The slider is based on Jonas Schmedtmann Bankist, link in README --*/
+const slider = function () {
+  const slides = document.querySelectorAll(".slide");
+  /*-- SLIDE BTNS -- */
+  const leftBtn = document.querySelector(".slider__btn--left");
+  const rightBtn = document.querySelector(".slider__btn--right");
+  /*-- SLIDE DOTS -- */
+  const dotContainer = document.querySelector(".dots");
 
-let currentSlide = 0;
-const slideMax = slides.length;
+  let currentSlide = 0;
+  const slideMax = slides.length;
 
-/*-- CREATE DOTS -- */
-const createDots = function () {
-  slides.forEach(function (s, i) {
-    dotContainer.insertAdjacentHTML(
-      "beforeend",
-      `<button class="dots__dot" data-slide="${i}"></button>`
+  /*-- FUNCTIONS --*/
+  /*-- CREATE DOTS -- */
+  const createDots = function () {
+    slides.forEach(function (s, i) {
+      dotContainer.insertAdjacentHTML(
+        "beforeend",
+        `<button class="dots__dot" data-slide="${i}"></button>`
+      );
+    });
+  };
+
+  /*-- ACTIVE DOT -- */
+  const activateDot = function (slide) {
+    document
+      .querySelectorAll(".dots__dot")
+      .forEach((dot) => dot.classList.remove("dots__dot--active"));
+
+    document
+      .querySelector(`.dots__dot [data-slide="${slide}"]`)
+      .classList.add("dots__dot--active");
+  };
+
+  const goToSlide = function (slide) {
+    slides.forEach(
+      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
     );
+  };
+
+  /*-- SLIDE BTNS FUNCTION NEXT SLIDE-- */
+  const nextSlide = function () {
+    if (currentSlide === slideMax - 1) {
+      currentSlide = 0;
+    } else {
+      currentSlide++;
+    }
+
+    goToSlide(currentSlide);
+    activateDot(currentSlide);
+  };
+
+  /*-- SLIDE BTNS FUNCTION PREVIOUS SLIDE-- */
+  const previousSlide = function () {
+    if (currentSlide === 0) {
+      currentSlide = slideMax - 1;
+    } else {
+      currentSlide--;
+    }
+    goToSlide(currentSlide);
+    activateDot(currentSlide);
+  };
+
+  /*-- INIT DOTS -- */
+  const init = function () {
+    goToSlide(0);
+    createDots();
+    /*-- MAKE ACTIVE DOT OPEN PAGE-- */
+    activateDot(0);
+  };
+  init();
+
+  /*-- EVENTLISTENERS FOR SLIDE-- */
+  rightBtn.addEventListener("click", nextSlide);
+  leftBtn.addEventListener("click", previousSlide);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") previousSlide();
+    if (e.key === "ArrowRight") nextSlide();
+  });
+
+  dotContainer.addEventListener("click", function (e) {
+    if (e.target.classList.contains("dots__dot")) {
+      const { slide } = e.target.dataset;
+      goToSlide(slide);
+      activateDot(slide);
+    }
   });
 };
-createDots();
-
-/*-- ACTIVE DOT -- */
-const activateDot = function (slide) {
-  document
-    .querySelectorAll(".dots__dot")
-    .forEach((dot) => dot.classList.remove("dots__dot--active"));
-
-  document
-    .querySelector(`.dots__dot [data-slide="${slide}"]`)
-    .classList.add("dots__dot--active");
-};
-/*-- MAKE ACTIVE DOT OPEN PAGE-- */
-activateDot(0);
-
-const goToSlide = function (slide) {
-  slides.forEach(
-    (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
-  );
-};
-goToSlide(0);
-
-/*-- SLIDE BTNS FUNCTION NEXT SLIDE-- */
-const nextSlide = function () {
-  if (currentSlide === slideMax - 1) {
-    currentSlide = 0;
-  } else {
-    currentSlide++;
-  }
-
-  goToSlide(currentSlide);
-  activateDot(currentSlide);
-};
-
-/*-- SLIDE BTNS FUNCTION PREVIOUS SLIDE-- */
-const previousSlide = function () {
-  if (currentSlide === 0) {
-    currentSlide = slideMax - 1;
-  } else {
-    currentSlide--;
-  }
-  goToSlide(currentSlide);
-  activateDot(currentSlide);
-};
-
-/*-- -- */
-
-/*-- EVENTLISTENERS FOR SLIDE-- */
-rightBtn.addEventListener("click", nextSlide);
-leftBtn.addEventListener("click", previousSlide);
-
-document.addEventListener("keydown", function (e) {
-  e.key === "ArrowLeft" && previousSlide();
-  e.key === "ArrowRight" && nextSlide();
-});
-
-dotContainer.addEventListener("click", function (e) {
-  if (e.target.classList.contains("dots__dot")) {
-    const { slide } = e.target.dataset;
-    goToSlide(slide);
-    activateDot(slide);
-  }
-});
+slider();
 
 /*-----------------*/
 /*-- ADD TO LIST -- */
@@ -192,7 +197,7 @@ function activateCancelListeners() {
 /*-- FUNCTION FOR UPDATE ITEMS--*/
 function updateItem(text, i) {
   itemsArray[i] = text;
-  localStorage.setItem("items", JSONS.stringify(itemsArray));
+  localStorage.setItem("items", JSON.stringify(itemsArray));
   location.reload();
 }
 
