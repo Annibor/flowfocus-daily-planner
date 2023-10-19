@@ -25,21 +25,54 @@ body {
   line-height: 1;
   font-weight: 400;
   min-height: 100vh;
+  background-color: #f0ebd8;
+}
+/* -----------------------*/
+/* --- HEADER --- */
+/* -----------------------*/
+
+.logo {
+  font-size: 3.6rem;
+}
+
+.input-header {
+  background-color: #dd6e42;
 }
 
 /* -----------------------*/
 /* --- SLIDE TIPS --- */
 /* -----------------------*/
 
+.tips-slide-section {
+  padding: 7rem 9rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #4f6d7a;
+}
+
+.tips-heading {
+  font-size: 2.8rem;
+  font-weight: 500;
+  padding: 1rem 3rem;
+}
+
 .tips-slider {
-  max-width: 100rem;
-  margin: 0 auto;
+  max-width: 80rem;
+  height: 30rem;
+  padding: 2rem 9rem;
   position: relative;
+  overflow: hidden;
 }
 
 .slide {
   position: absolute;
   width: 100%;
+  height: 30rem;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 2.4px;
+  background-color: #c0d6df;
 }
 
 .slider__btn {
@@ -49,10 +82,10 @@ body {
   cursor: pointer;
 }
 
-.slider__btn--left{
-  left:6%
+.slider__btn--left {
+  left: 6%;
 }
 
-.slider__btn--right{
+.slider__btn--right {
   right: 6%;
 }
