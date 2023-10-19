@@ -37,6 +37,8 @@ body {
 
 .input-header {
   background-color: #dd6e42;
+  font-size: 2rem;
+  padding: 2rem;
 }
 
 /* -----------------------*/
@@ -44,7 +46,7 @@ body {
 /* -----------------------*/
 
 .tips-slide-section {
-  padding: 7rem 9rem;
+  padding: 6rem 9rem;
   display: flex;
   flex-direction: column;
   background-color: #4f6d7a;
@@ -59,7 +61,7 @@ body {
 .tips-slider {
   max-width: 80rem;
   height: 30rem;
-  padding: 2rem 9rem;
+  padding: 2rem 6rem;
   position: relative;
   overflow: hidden;
 }
@@ -73,6 +75,7 @@ body {
   line-height: 1.6rem;
   letter-spacing: 2.4px;
   background-color: #c0d6df;
+  display: flex;
 }
 
 .slider__btn {
@@ -88,4 +91,21 @@ body {
 
 .slider__btn--right {
   right: 6%;
+}
+
+.text-tips {
+  max-width: fit-content;
+}
+
+/* -----------------------*/
+/* --- TODO LIST --- */
+/* -----------------------*/
+
+.container {
+  background-color: #e8dab2;
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
 }
