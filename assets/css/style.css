@@ -17,6 +17,31 @@ html {
 }
 
 /* -----------------------*/
+/* --- COLORS USED --- */
+/* -----------------------*/
+/*
+Primary:
+#102E4A
+#225378
+#3378A5
+#55C1FF
+#5887FF
+#715AFF
+#8C6EFF
+#A682FF
+#500AFF
+
+TINTS:
+#F0EBFF
+#EBF8FF
+SHADES:
+#1A0066
+#002EA3
+
+*/
+
+
+/* -----------------------*/
 /* --- General styles --- */
 /* -----------------------*/
 
@@ -25,7 +50,8 @@ body {
   line-height: 1;
   font-weight: 400;
   min-height: 100vh;
-  background-color: #f0ebd8;
+  background: rgb(253,29,29);
+  background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(253,39,32,1) 0%, rgba(131,58,180,1) 77%, rgba(252,176,69,1) 100%);
 }
 /* -----------------------*/
 /* --- HEADER --- */
@@ -64,6 +90,8 @@ body {
   padding: 2rem 6rem;
   position: relative;
   overflow: hidden;
+  background: #5887FF;
+ 
 }
 
 .slide {
@@ -108,4 +136,13 @@ body {
   flex-direction: row;
   gap: 4rem;
   justify-content: center;
+  background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+  box-shadow: 2px 1rem 2rem rgba(0,0,0,0.5);
+  max-width: 80rem;
+  border-radius: 5px;
+  margin: 3rem;
+}
+
+.to-do-input{
+
 }
