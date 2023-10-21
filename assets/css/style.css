@@ -247,3 +247,8 @@ h4 {
   font-size: 2rem;
   display: flex;
 }
+
+.editBtn, .deleteBtn{
+  padding: 1rem 0rem;
+}
+
