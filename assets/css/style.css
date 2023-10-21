@@ -231,3 +231,19 @@ h4 {
 #item::placeholder{
   color: #fff;
 }
+
+.to-do-list textarea{
+  background: transparent;
+  font-family: "Kalam",Inter, sans-serif;
+ border: none;
+ padding: 1rem 1rem;
+ border-radius: 5px;
+ box-shadow: inset 0rem 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.06);
+ color: #fff;
+ font-size: 2rem;
+}
+
+.input-controller{
+  font-size: 2rem;
+  display: flex;
+}
