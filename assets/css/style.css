@@ -176,13 +176,17 @@ h4 {
 /* --- TODO LIST --- */
 /* -----------------------*/
 
+.section-to-do-input{
+  margin-top: 5rem;
+}
+
 .container {
-  background-color: #e8dab2;
   padding: 5rem;
   display: flex;
-  flex-direction: row;
-  gap: 4rem;
+  flex-direction: column;
+  gap: 2rem;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(
     to left bottom,
     rgba(255, 255, 255, 0.1),
@@ -191,5 +195,5 @@ h4 {
   box-shadow: 2px 1rem 2rem rgba(0, 0, 0, 0.5);
   max-width: 80rem;
   border-radius: 5px;
-  margin: 3rem;
+  margin: 0 auto;
 }
