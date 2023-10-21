@@ -42,7 +42,7 @@ const slider = function () {
       .forEach((dot) => dot.classList.remove("dots__dot--active"));
 
     document
-      .querySelector(`.dots__dot [data-slide="${slide}"]`)
+      .querySelector(`.dots__dot[data-slide="${slide}"]`)
       .classList.add("dots__dot--active");
   };
 
@@ -129,8 +129,8 @@ function displayItems() {
     <div class="input-controller">
       <textarea disabled>${itemsArray[i]}</textarea>
       <div class="edit-conroller">
-        <i class="fa-thin fa-check deleteBtn"></i>
-        <i class="fa-thin fa-pen-to-square editBtn"></i>
+        <i class="fa-solid fa-check deleteBtn"></i>
+        <i class="fa-solid fa-pen-to-square editBtn"></i>
       </div>
     </div>
     <div class="update-controller">

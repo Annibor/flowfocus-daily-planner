@@ -75,7 +75,7 @@ body {
   padding: 6rem 9rem;
   display: flex;
   flex-direction: column;
-  background-color: #4f6d7a;
+  background-color: transparent;
 }
 
 .tips-heading {
@@ -90,8 +90,10 @@ body {
   padding: 2rem 6rem;
   position: relative;
   overflow: hidden;
-  background: #5887FF;
- 
+  background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+  box-shadow: 2px 1rem 2rem rgba(0,0,0,0.5);
+  max-width: 80rem;
+  border-radius: 5px;
 }
 
 .slide {
@@ -104,6 +106,10 @@ body {
   letter-spacing: 2.4px;
   background-color: #c0d6df;
   display: flex;
+  background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+  box-shadow: 2px 1rem 2rem rgba(0,0,0,0.5);
+  max-width: 80rem;
+  border-radius: 5px;
 }
 
 .slider__btn {
@@ -125,6 +131,24 @@ body {
   max-width: fit-content;
 }
 
+.dots{
+  position: absolute;
+  bottom: 3%;
+  transform: translateX(-50%);
+  left: 50%;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.dots__dot{
+  opacity: 0.8;
+  height: 1.3rem;
+  width: 1.3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+}
+
 /* -----------------------*/
 /* --- TODO LIST --- */
 /* -----------------------*/
@@ -143,6 +167,3 @@ body {
   margin: 3rem;
 }
 
-.to-do-input{
-
-}
