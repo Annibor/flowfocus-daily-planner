@@ -49,6 +49,9 @@ body {
   line-height: 1;
   font-weight: 400;
   min-height: 100vh;
+  background: rgb(113,90,255);
+background: linear-gradient(324deg, rgba(113,90,255,1) 0%, rgba(22,41,107,1) 51%, rgba(10,35,87,1) 81%, rgba(85,59,150,1) 97%);
+  /*
   background: rgb(253, 29, 29);
   background: linear-gradient(
     90deg,
@@ -56,7 +59,7 @@ body {
     rgba(253, 39, 32, 1) 0%,
     rgba(131, 58, 180, 1) 77%,
     rgba(252, 176, 69, 1) 100%
-  );
+  ); */
   color: #fff;
 }
 
@@ -249,6 +252,6 @@ h4 {
 }
 
 .editBtn, .deleteBtn{
-  padding: 1rem 0rem;
+  padding: 1rem;
 }
 
