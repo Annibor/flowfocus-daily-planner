@@ -109,7 +109,6 @@ slider();
 /*-----------------*/
 /* THIS TO DO LIST FUNCTIONS ARE BASED ON WEB DEV TUTORIALS, LINK IN README */
 
-
 /*-- WHEN CKLICKING THE BUTTON-- */
 document.querySelector("#enter").addEventListener("click", () => {
   const item = document.querySelector("#item");
@@ -130,7 +129,7 @@ function displayItems() {
   for (let i = 0; i < itemsArray.length; i++) {
     items += ` <div class="item">
     <div class="input-controller">
-      <textarea disabled class="itemsText">${itemsArray[i]}</textarea>
+      <textarea disabled aria-label="Write items for to do list" class="itemsText">${itemsArray[i]}</textarea>
       <div class="edit-conroller">
         <i aria-label="Delete button" class="fa-solid fa-trash deleteBtn buttons"></i>
         <i aria-label="Edit button" class="fa-solid fa-pen-to-square editBtn buttons"></i>
