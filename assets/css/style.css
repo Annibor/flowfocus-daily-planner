@@ -101,7 +101,7 @@ transform: scale(0.8);
 .input-header {
   background-color: transparent;
   font-family: "Kalam", "Inter", sans-serif;
-  font-size: 3.2rem;
+  font-size: 2.6rem;
   padding: 1rem 2rem;
   margin: 2rem;
 }
@@ -113,6 +113,7 @@ transform: scale(0.8);
 .tips-heading {
   font-size: 2.6rem;
   padding: 3rem 4rem;
+  font-weight: 300;
 }
 
 .tips-slider {
@@ -235,6 +236,7 @@ transform: scale(0.8);
   box-shadow: inset 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
   color: #fff;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 
@@ -266,9 +268,6 @@ transform: scale(0.8);
   padding: 1rem 1rem;
   border-radius: 5px;
   letter-spacing: 1.4px;
-  /*
- box-shadow: inset 0rem 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.06);
- */
   display: #fff;
   font-size: 2.4rem;
 
@@ -284,6 +283,7 @@ transform: scale(0.8);
 .deleteBtn,
 .doneBtn {
   padding: 1rem;
+  cursor: pointer;
 }
 
 /* MAKE TASKE GET LINE THROUGH TEXT WHEN DONE*/
@@ -304,4 +304,5 @@ color: rgba(255, 255, 255, 0.8);
   box-shadow: inset 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
   color: #fff;
   font-size: 1.4rem;
+  cursor: pointer;
 }
