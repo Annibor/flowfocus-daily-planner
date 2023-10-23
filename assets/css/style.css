@@ -75,6 +75,15 @@ h4 {
   padding-bottom: 1.8rem;
 }
 
+.buttons{
+  transition: transform 0.3s ease;
+}
+
+.buttons:active {
+transform: scale(0.8);
+}
+
+
 /* -----------------------*/
 /* --- HEADER --- */
 /* -----------------------*/
