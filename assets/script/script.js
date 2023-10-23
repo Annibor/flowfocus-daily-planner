@@ -107,6 +107,8 @@ slider();
 /*-----------------*/
 /*-- ADD TO LIST -- */
 /*-----------------*/
+/* THIS TO DO LIST FUNCTIONS ARE BASED ON WEB DEV TUTORIALS, LINK IN README */
+
 
 /*-- WHEN CKLICKING THE BUTTON-- */
 document.querySelector("#enter").addEventListener("click", () => {
