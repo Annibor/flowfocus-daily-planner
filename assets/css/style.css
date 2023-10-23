@@ -254,6 +254,7 @@ h4 {
   border: none;
   padding: 1rem 1rem;
   border-radius: 5px;
+  letter-spacing: 1.4px;
   /*
  box-shadow: inset 0rem 0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.06);
  */
@@ -269,6 +270,12 @@ h4 {
 }
 
 .editBtn,
-.deleteBtn {
+.deleteBtn,
+.doneBtn {
   padding: 1rem;
+}
+
+.completed {
+text-decoration: line-through;
+color: rgba(255, 255, 255, 0.8);
 }

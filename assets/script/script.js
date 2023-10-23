@@ -2,7 +2,8 @@
 /*-----------------*/
 /*-- CHECK LOCAL STORAGE -- */
 /*------------------*/
-const itemsArray = localStorage.getItem("items")?JSON.parse(localStorage.getItem("items"))
+const itemsArray = localStorage.getItem("items")
+  ? JSON.parse(localStorage.getItem("items"))
   : [];
 
 /*-----------------*/
@@ -127,10 +128,11 @@ function displayItems() {
   for (let i = 0; i < itemsArray.length; i++) {
     items += ` <div class="item">
     <div class="input-controller">
-      <textarea disabled>${itemsArray[i]}</textarea>
+      <textarea disabled class="itemsText">${itemsArray[i]}</textarea>
       <div class="edit-conroller">
-        <i class="fa-solid fa-check deleteBtn"></i>
+        <i class="fa-solid fa-trash deleteBtn"></i>
         <i class="fa-solid fa-pen-to-square editBtn"></i>
+        <i class="fa-solid fa-check doneBtn"></i>
       </div>
     </div>
     <div class="update-controller">
@@ -146,6 +148,7 @@ function displayItems() {
   activateEditListeners();
   activateSaveListeners();
   activateCancelListeners();
+  activateDoneListeners();
 }
 
 /*-- FUNCTION FOR DELETE BUTTONS--*/
@@ -167,6 +170,17 @@ function activateEditListeners() {
     eb.addEventListener("click", () => {
       updateController[i].style.display = "block";
       inputs[i].disabled = false;
+    });
+  });
+}
+
+/* FUNCTION FOR DONE BUTTONS */
+function activateDoneListeners() {
+  const doneBtn = document.querySelectorAll(".doneBtn");
+  doneBtn.forEach((doneBtn, i) => {
+    doneBtn.addEventListener("click", () => {
+      const itemsText = document.querySelectorAll(".itemsText")[i];
+      itemsText.classList.toggle("completed");
     });
   });
 }
