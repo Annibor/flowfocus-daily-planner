@@ -130,14 +130,14 @@ function displayItems() {
     <div class="input-controller">
       <textarea disabled class="itemsText">${itemsArray[i]}</textarea>
       <div class="edit-conroller">
-        <i class="fa-solid fa-trash deleteBtn buttons"></i>
-        <i class="fa-solid fa-pen-to-square editBtn buttons"></i>
-        <i class="fa-solid fa-check doneBtn buttons"></i>
+        <i aria-label="Delete button" class="fa-solid fa-trash deleteBtn buttons"></i>
+        <i aria-label="Edit button" class="fa-solid fa-pen-to-square editBtn buttons"></i>
+        <i aria-label="Mark as done button" class="fa-solid fa-check doneBtn buttons"></i>
       </div>
     </div>
     <div class="update-controller">
-      <button class="saveBtn buttons">Save</button>
-      <button class="cancelBtn buttons">Cancel</button>
+      <button aria-label="Save button" class="saveBtn buttons">Save</button>
+      <button aria-label="Cancel edit button" class="cancelBtn buttons">Cancel</button>
     </div>
   </div> `;
   }
