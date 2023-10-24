@@ -67,13 +67,19 @@ I created my wireframes for the website by using [Balsamiq](https://balsamiq.com
 
 ### Colors
 
-- I used [Coolors](https://coolors.co/) for making a color palette for the website.
+- I used [Coolors](https://coolors.co/) for making a color palette for the website. The color are called : #102E4A
+#55C1FF
+#5887FF
+#715AFF
+#A682FF
+
 
 - ![Color palette]()
 
-I used [Tint and Shades](https://maketintsandshades.com/) to find different tints and shades of the colors from the original color palette.
+I used [Tint and Shades](https://maketintsandshades.com/) to find different tints and shades of the colors from the original color palette. The shades used on this site were: #1A0066
+#002EA3
+#500AFF
 
-- ![Tints]()
 - ![Shades]()
 
 I used [Color Contrast Shecker](https://coolors.co/contrast-checker/112a46-acc8e5) to make sure I used colors that had good contrast to eachother.
@@ -83,6 +89,8 @@ I used [Color Contrast Shecker](https://coolors.co/contrast-checker/112a46-acc8e
 -
 
 ### Fonts
+- I used a font called Inter as a base for the page. This is the font used on the subheading on the logo, the heading for the slider and on the text on the page.
+- For the logo, date, slides headings and the text on the to do inputs I used a font called Kalam. This to get add some dimention for the webpage, without making it overwhelming.
 
 ### Design Philosophy/ Features
 
