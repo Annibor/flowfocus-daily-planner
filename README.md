@@ -4,6 +4,8 @@
 
 # Introduction
 
+Welcome to FlowFocus, your daily planner to help you achivie your goals, reduce stress and get more organized. In the society we live in today it's easy to feek overwhelmed by responsibilities and evaryday things that triggers stress. FlowFocus is the app thats her to help youm to get a more organized everyday life, so you can save your energy for what matters to you, stay in the flow and boost your productivity effortlessly.
+
 ![Am I Responsive Screenshot]()
 
 ## Table of Content
