@@ -7,10 +7,6 @@ const itemsArray = localStorage.getItem("items")
   : [];
 
 /*-----------------*/
-/*-- AUDIO--*/
-/*-----------------*/
-
-/*-----------------*/
 /*-- SLIDER TIPS -- */
 /*-----------------*/
 /*-- The slider is based on Jonas Schmedtmann Bankist, link in README --*/
