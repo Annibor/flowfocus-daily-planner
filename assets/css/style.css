@@ -1,6 +1,5 @@
 /*-- GOOGLE FONTS --*/
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;700&family=Rock+Salt&family=The+Girl+Next+Door&family=Work+Sans:wght@100;300;500&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Kalam:wght@400;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;700&family=Rock+Salt&family=The+Girl+Next+Door&family=Work+Sans:wght@100;300;500&display=swap');
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
   padding: 0;
@@ -89,12 +88,25 @@ transform: scale(0.8);
 /* -----------------------*/
 
 .logo {
-  font-size: 4.6rem;
-  padding: 4rem;
+  font-size: 5.4rem;
+  padding: 6rem 0rem 0rem 0rem;
   font-family: "Kalam", "Inter", sans-serif;
-  font-size: 3.2rem;
   font-weight: 600;
   letter-spacing: 5px;
+  max-width: 80rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#fff, #b89bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.under-logo{
+  font-size: 2rem;
+  padding: 2rem 0rem 4rem 0rem;
+  font-weight: 500;
+  letter-spacing: 1.75px;
+  max-width: 80rem;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 
@@ -102,8 +114,12 @@ transform: scale(0.8);
   background-color: transparent;
   font-family: "Kalam", "Inter", sans-serif;
   font-size: 2.6rem;
-  padding: 1rem 2rem;
-  margin: 2rem;
+  margin: 0 auto;
+  max-width: 80rem;
+  text-align: right;
+  background: -webkit-linear-gradient(#fff, #b89bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* -----------------------*/
@@ -111,9 +127,14 @@ transform: scale(0.8);
 /* -----------------------*/
 
 .tips-heading {
-  font-size: 2.6rem;
-  padding: 3rem 4rem;
-  font-weight: 300;
+  font-size: 2rem;
+  padding: 3rem 0rem;
+  font-weight: 500;
+  max-width: 80rem;
+  margin: 0 auto;
+  text-transform: uppercase;
+  
+  
 }
 
 .tips-slider {
@@ -303,4 +324,47 @@ color: rgba(255, 255, 255, 0.8);
   color: #fff;
   font-size: 1.4rem;
   cursor: pointer;
+}
+
+
+/* ----------------------------------------*/
+/* --- BELOW 1344px (SMALLER DESKTOPS) --- */
+/* ----------------------------------------*/
+
+@media (max-width: 86rem) {
+
+}
+
+
+/* ----------------------------------------*/
+/* --- BELOW 1200px (SMALLER DESKTOPS) --- */
+/* ----------------------------------------*/
+
+@media (max-width: 75rem) {
+
+}
+
+
+/* ----------------------------------------*/
+/* --- BELOW 944px (SMALLER DESKTOPS) --- */
+/* ----------------------------------------*/
+
+@media (max-width: 59rem) {
+
+}
+
+/* ----------------------------------------*/
+/* --- BELOW 704px (SMALLER DESKTOPS) --- */
+/* ----------------------------------------*/
+
+@media (max-width: 44rem) {
+
+}
+
+/* ----------------------------------------*/
+/* --- BELOW 544px (SMALLER DESKTOPS) --- */
+/* ----------------------------------------*/
+
+@media (max-width: 34rem) {
+
 }
