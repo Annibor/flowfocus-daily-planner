@@ -33,17 +33,23 @@ Welcome to FlowFocus, your daily planner to help you achivie your goals, reduce 
 
 ### Project Goals
 
+My primary goal with FLowFocus was to cfreate a user-friendly and effective everyday planner, that could help users to organize their tasks ans enhance their productivity. One goal was to provide a solution that encourage self-care, task proritization and goal setting for users to ease their everyday stress.
+
 ### User-Centered Approach
 
-#### As a buisness Owner
+The user is placed in the center of the development process, to make sure that the end result would be a userfriendly and user proritized website.
 
--
+#### As a General user
 
-#### As a General user/costumer
+-FlowFocus is for anyone that is looking for a way to get more organzed in their everyday life.
 
--
+#### As a Student
+
+- With FlowFocus you can get your tasks in order, and have a clear overview of everything that needs to be done, homework, assigments or small goals that you need to do before the big sumbmission date that's up ahead.
 
 #### As a New User
+
+- If your new to FLowFocus, you'll discover a welcoming and easy navigated interface. The app is designed with the mind of "Less is more", to make sure that nothing easily could distract the user.
 
 ### Wireframes
 
