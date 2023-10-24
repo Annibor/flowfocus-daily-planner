@@ -47,6 +47,10 @@ The user is placed in the center of the development process, to make sure that t
 
 - With FlowFocus you can get your tasks in order, and have a clear overview of everything that needs to be done, homework, assigments or small goals that you need to do before the big sumbmission date that's up ahead.
 
+#### As a Business Owner
+
+- FlowFocus can help you to manage your daily tasks and other responsibilities that comes with owning a business. With this app, you could keep you head clear and focus on the task your doing right now, and once your done, mark the task that's done, and move on to the next thing on your to do list.
+
 #### As a New User
 
 - If your new to FLowFocus, you'll discover a welcoming and easy navigated interface. The app is designed with the mind of "Less is more", to make sure that nothing easily could distract the user.
