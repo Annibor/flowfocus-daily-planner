@@ -130,10 +130,10 @@ function displayItems() {
     items += ` <div class="item">
     <div class="input-controller">
       <textarea disabled aria-label="Write items for to do list" class="itemsText">${itemsArray[i]}</textarea>
-      <div class="edit-conroller">
+      <div class="edit-controller">
+        <i aria-label="Mark as done button" class="fa-solid fa-check doneBtn buttons"></i>
         <i aria-label="Delete button" class="fa-solid fa-trash deleteBtn buttons"></i>
         <i aria-label="Edit button" class="fa-solid fa-pen-to-square editBtn buttons"></i>
-        <i aria-label="Mark as done button" class="fa-solid fa-check doneBtn buttons"></i>
       </div>
     </div>
     <div class="update-controller">
