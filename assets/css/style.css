@@ -99,6 +99,7 @@ transform: scale(0.8);
   background: -webkit-linear-gradient(#fff, #b89bff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .under-logo{
   font-size: 2rem;
@@ -120,6 +121,7 @@ transform: scale(0.8);
   background: -webkit-linear-gradient(#fff, #b89bff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* -----------------------*/
