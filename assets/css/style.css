@@ -95,10 +95,10 @@ h4 {
   max-width: 80rem;
   margin: 0 auto;
   text-transform: uppercase;
-  background: -webkit-linear-gradient(#fff, #b89bff);
+  background: linear-gradient(#fff, #b89bff);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  color: transparent;
 }
 .under-logo {
   font-size: 2rem;
@@ -117,10 +117,10 @@ h4 {
   margin: 0 auto;
   max-width: 80rem;
   text-align: right;
-  background: -webkit-linear-gradient(#fff, #b89bff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: linear-gradient(#fff, #b89bff);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
 }
 
 /* -----------------------*/
@@ -157,7 +157,6 @@ h4 {
   font-size: 1.8rem;
   line-height: 3rem;
   letter-spacing: 2px;
-  background-color: #c0d6df;
   display: flex;
   background: linear-gradient(
     to left bottom,
@@ -277,6 +276,7 @@ h4 {
   box-shadow: 0.2rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
   line-height: 2rem;
   letter-spacing: 2px;
+  
 }
 
 .to-do-list textarea {
