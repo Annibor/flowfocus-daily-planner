@@ -68,11 +68,10 @@ I created my wireframes for the website by using [Balsamiq](https://balsamiq.com
 ### Colors
 
 - I used [Coolors](https://coolors.co/) for making a color palette for the website. The color are called : #102E4A
-#55C1FF
-#5887FF
-#715AFF
-#A682FF
-
+  #55C1FF
+  #5887FF
+  #715AFF
+  #A682FF
 
 - ![Color palette]()
 
@@ -89,6 +88,7 @@ I used [Color Contrast Shecker](https://coolors.co/contrast-checker/112a46-acc8e
 -
 
 ### Fonts
+
 - I used a font called Inter as a base for the page. This is the font used on the subheading on the logo, the heading for the slider and on the text on the page.
 - For the logo, date, slides headings and the text on the to do inputs I used a font called Kalam. This to get add some dimention for the webpage, without making it overwhelming.
 
@@ -120,6 +120,8 @@ Future features for the webpage are:
 - Troughout the development I've used Devtools to inspect and test the website to be able to make the best I could for it.
 
 ### Lighthouse
+
+-
 
 #### Issues
 
@@ -153,7 +155,7 @@ My link is: [BudgetBeam](
 
 ## Languages
 
-- This website was bulit using HTML and CSS.
+- This website was bulit using HTML, CSS and Javascript.
 
 ## Software
 
@@ -166,6 +168,7 @@ My link is: [BudgetBeam](
 - I've also used Coolors.co to contrast check text colors and background colors.
 - I've used maketintsandshades.com to find evetuals tints and shadow colors as a complement for the color palette.
 - I've used Balsamiq when I made the wireframes for the website.
+- I've used cssgradient.io to make the background gradient.
 
 ## Media
 
@@ -195,11 +198,15 @@ My link is: [BudgetBeam](
 
 ### Content
 
-- This README is based on a README created by Davis Calikes, available at [GitHub](https://github.com/davidcalikes/portfolio-project-one#readme), and the README by me, available at [GitHub](https://github.com/Annibor/EarthEcho-Studios/blob/main/README.md)
+- This README is based upon two sourses for guidance: one by Davis Calikes, available at [GitHub](https://github.com/davidcalikes/portfolio-project-one#readme), and another authored by me, available at [GitHub](https://github.com/Annibor/EarthEcho-Studios/blob/main/README.md)
+- The slider effect Credit: The captivating slider effect featured in this project is inspired by Jonas Schmedtmann's Advanced DOM Bankist, avalible at [GitHub](https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/13-Advanced-DOM-Bankist).
+- The todo list reference: The ToDo List functionality has been developed based on the educational content from the YouTube video titled "How to Build a Todo List App with Local Storage for Beginners: HTML, CSS & JavaScript." Avaliable at [YouTube](https://www.youtube.com/watch?v=SeKQSQDUMDQ).
+  -Usage, Modification, Distrubition, Private Use and Liability Content: The guidelines pertaining to usage, modification, distribution, private use, and liability are directly derived from my project, accessible at [GitHub](https://github.com/Annibor/EarthEcho-Studios/blob/main/README.md)
 
 ### Special Thanks
 
 - **Michel**: My boyfriend
+- **Anthony**: My mentor who've been helping me during the developmentprocess.
 
 ## What I've learned
 
