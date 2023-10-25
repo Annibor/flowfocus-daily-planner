@@ -436,6 +436,10 @@ h4 {
     font-size: 2.6rem;
   }
 
+  .dots {
+    gap: 2.8rem;
+  }
+
   .container {
     padding: 3rem 1rem;
     justify-content: fit;

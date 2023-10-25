@@ -27,7 +27,7 @@ const slider = function () {
     slides.forEach(function (s, i) {
       dotContainer.insertAdjacentHTML(
         "beforeend",
-        `<button class="dots__dot" data-slide="${i}"></button>`
+        `<button aria-label="dots showing what slide your on" class="dots__dot" data-slide="${i}"></button>`
       );
     });
   };
