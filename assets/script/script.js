@@ -2,8 +2,7 @@
 /*-----------------*/
 /*-- CHECK LOCAL STORAGE -- */
 /*------------------*/
-const itemsArray = localStorage.getItem("items")
-  ? JSON.parse(localStorage.getItem("items"))
+const itemsArray = localStorage.getItem("items")? JSON.parse(localStorage.getItem("items"))
   : [];
 
 /*-----------------*/
@@ -105,52 +104,34 @@ slider();
 /*-----------------*/
 /* THIS TO DO LIST FUNCTIONS ARE BASED ON WEB DEV TUTORIALS, LINK IN README */
 
-/*-- WHEN CKLICKING THE BUTTON-- */
-document.querySelector("#enter").addEventListener("click", () => {
-  const item = document.querySelector("#item");
-  createItem(item);
+/*-- QUERY SELECTORS --*/
+const enterBtn = document.querySelector("#enter");
+const itemInput = document.querySelector("#item");
+const deleteBtn = document.querySelectorAll(".deleteBtn");
+const editBtn = document.querySelectorAll(".editBtn");
+const saveBtn = document.querySelectorAll(".saveBtn");
+const cancelBtn = document.querySelectorAll(".cancelBtn");
+const doneBtn = document.querySelectorAll(".doneBtn");
+
+const updateControllers = document.querySelectorAll(".update-controller");
+const inputs = document.querySelectorAll(
+  ".input-controller textarea"
+);
+
+/*-- WHEN CLICKING THE BUTTON -- */
+enterBtn.addEventListener("click", () => {
+  createItem(itemInput);
 });
 
-/*-- WHEN PRESSING ENTER BUTTON-- */
-document.querySelector("#item").addEventListener("keypress", (e) => {
+/*-- WHEN PRESSING ENTER BUTTON -- */
+itemInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
-    const item = document.querySelector("#item");
-    createItem(item);
-  }
+    createItem(itemInput);
+  };
 });
 
-/*-- SHOW ON SCREEN -- */
-function displayItems() {
-  let items = "";
-  for (let i = 0; i < itemsArray.length; i++) {
-    items += ` <div class="item">
-    <div class="input-controller">
-      <textarea disabled aria-label="Write items for to do list" class="itemsText">${itemsArray[i]}</textarea>
-      <div class="edit-controller">
-        <i aria-label="Mark as done button" class="fa-solid fa-check doneBtn buttons"></i>
-        <i aria-label="Delete button" class="fa-solid fa-trash deleteBtn buttons"></i>
-        <i aria-label="Edit button" class="fa-solid fa-pen-to-square editBtn buttons"></i>
-      </div>
-    </div>
-    <div class="update-controller">
-      <button aria-label="Save button" class="saveBtn buttons">Save</button>
-      <button aria-label="Cancel edit button" class="cancelBtn buttons">Cancel</button>
-    </div>
-  </div> `;
-  }
-  document.querySelector(".to-do-list").innerHTML = items;
-
-  /*-- FOR EDIT & DELETE BUTTONS--*/
-  activateDeleteListeners();
-  activateEditListeners();
-  activateSaveListeners();
-  activateCancelListeners();
-  activateDoneListeners();
-}
-
-/*-- FUNCTION FOR DELETE BUTTONS--*/
+/*-- FUNCTION FOR DELETE BUTTONS --*/
 function activateDeleteListeners() {
-  let deleteBtn = document.querySelectorAll(".deleteBtn");
   deleteBtn.forEach((db, i) => {
     db.addEventListener("click", () => {
       deleteItem(i);
@@ -158,55 +139,46 @@ function activateDeleteListeners() {
   });
 }
 
-/*-- FUNCTION FOR EDIT BUTTONS--*/
+/*-- FUNCTION FOR EDIT BUTTONS --*/
 function activateEditListeners() {
-  const editBtn = document.querySelectorAll(".editBtn");
-  const updateController = document.querySelectorAll(".update-controller");
-  const inputs = document.querySelectorAll(".input-controller textarea");
   editBtn.forEach((eb, i) => {
     eb.addEventListener("click", () => {
-      updateController[i].style.display = "block";
-      inputs[i].disabled = false;
+    updateControllers[i].style.display = "block";
+    inputs[i].disabled = false;
     });
   });
 }
 
 /* FUNCTION FOR DONE BUTTONS */
 function activateDoneListeners() {
-  const doneBtn = document.querySelectorAll(".doneBtn");
   doneBtn.forEach((doneBtn, i) => {
     doneBtn.addEventListener("click", () => {
-      const itemsText = document.querySelectorAll(".itemsText")[i];
+      const itemsText = itemsText[i];
       itemsText.classList.toggle("completed");
     });
   });
 }
 
-/*-- FUNCTION FOR SAVE BUTTONS--*/
+/*-- FUNCTION FOR SAVE BUTTONS --*/
 function activateSaveListeners() {
-  const saveBtn = document.querySelectorAll(".saveBtn");
-  const inputs = document.querySelectorAll(".input-controller textarea");
   saveBtn.forEach((sb, i) => {
-    sb.addEventListener("click", () => {
-      updateItem(inputs[i].value, i);
+    saveBtn.addEventListener("click", () => {
+    updateItem(inputs[i].value, i);
     });
   });
 }
 
-/*-- FUNCTION FOR CANCEL BUTTONS--*/
+/*-- FUNCTION FOR CANCEL BUTTONS --*/
 function activateCancelListeners() {
-  const cancelBtn = document.querySelectorAll(".cancelBtn");
-  const updateController = document.querySelectorAll(".update-controller");
-  const inputs = document.querySelectorAll(".input-controller textarea");
   cancelBtn.forEach((cb, i) => {
-    cb.addEventListener("click", () => {
-      updateController[i].style.display = "none";
-      inputs[i].disabled = true;
+    cancelBtn.addEventListener("click", () => {
+    updateControllers[i].style.display = "none";
+    inputs[i].disabled = true;
     });
   });
 }
 
-/*-- FUNCTION FOR UPDATE ITEMS--*/
+/*-- FUNCTION FOR UPDATE ITEMS --*/
 function updateItem(text, i) {
   itemsArray[i] = text;
   localStorage.setItem("items", JSON.stringify(itemsArray));
@@ -223,6 +195,44 @@ function createItem(item) {
   itemsArray.push(item.value);
   localStorage.setItem("items", JSON.stringify(itemsArray));
   location.reload();
+}
+
+/*-- SHOW ON SCREEN -- */
+function displayItems() {
+  let items = "";
+  for (let i = 0; i < itemsArray.length; i++) {
+    items += `
+    <div class="item">
+    <div class="input-controller">
+      <textarea disabled aria-label="Write items for to do list" class="itemsText">${itemsArray[i]}</textarea>
+      <div class="edit-controller">
+        <i aria-label="Mark as done button" class="fa-solid fa-check doneBtn buttons"></i>
+        <i aria-label="Delete button" class="fa-solid fa-trash deleteBtn buttons"></i>
+        <i aria-label="Edit button" class="fa-solid fa-pen-to-square editBtn buttons"></i>
+      </div>
+    </div>
+    <div class="update-controller">
+      <button aria-label="Save button" class="saveBtn buttons">Save</button>
+      <button aria-label="Cancel edit button" class="cancelBtn buttons">Cancel</button>
+    </div>
+  </div>
+    `;
+  }
+  document.querySelector(".to-do-list").innerHTML = items;
+
+  /*AFTER UPDATING THE DOM, ACTIVATE LISTENERS*/
+
+  activateListeners();
+}
+
+/*FUNCTION TO ACTIVATE EVENT LISTENERS FOR DONE,EDIT,DELETE,SAVE AND CANCEL BUTTONS*/
+
+function activateListeners() {
+  activateDoneListeners();
+  activateEditListeners();
+  activateDeleteListeners();
+  activateSaveListeners();
+  activateCancelListeners();
 }
 
 /*-----------------*/
