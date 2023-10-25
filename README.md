@@ -151,7 +151,7 @@ I deployed early to ba able to test the website deployed during the development.
 4. Save it. It can take a few minutes, but then you will be able to find the link to the deployed website in the repository on the menu to the right, under [Deplyments]().
 5. There you'll find the daployes website no top of the page under the heading Active deployments.
 
-My link is: [BudgetBeam](
+My link is: [FlowFocus]()
 
 ## Languages
 
@@ -201,7 +201,7 @@ My link is: [BudgetBeam](
 - This README is based upon two sourses for guidance: one by Davis Calikes, available at [GitHub](https://github.com/davidcalikes/portfolio-project-one#readme), and another authored by me, available at [GitHub](https://github.com/Annibor/EarthEcho-Studios/blob/main/README.md)
 - The slider effect Credit: The captivating slider effect featured in this project is inspired by Jonas Schmedtmann's Advanced DOM Bankist, avalible at [GitHub](https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/13-Advanced-DOM-Bankist).
 - The todo list reference: The ToDo List functionality has been developed based on the educational content from the YouTube video titled "How to Build a Todo List App with Local Storage for Beginners: HTML, CSS & JavaScript." Avaliable at [YouTube](https://www.youtube.com/watch?v=SeKQSQDUMDQ).
-  -Usage, Modification, Distrubition, Private Use and Liability Content: The guidelines pertaining to usage, modification, distribution, private use, and liability are directly derived from my project, accessible at [GitHub](https://github.com/Annibor/EarthEcho-Studios/blob/main/README.md)
+- Usage, Modification, Distrubition, Private Use and Liability Content: The guidelines pertaining to usage, modification, distribution, private use, and liability are directly derived from my project, accessible at [GitHub](https://github.com/Annibor/EarthEcho-Studios/blob/main/README.md)
 
 ### Special Thanks
 
