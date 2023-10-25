@@ -123,11 +123,16 @@ enterBtn.addEventListener("click", () => {
   createItem(itemInput);
 });
 
+/*
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowLeft") previousSlide();
+  if (e.key === "ArrowRight") nextSlide();
+});
+*/
+
 /*-- WHEN PRESSING ENTER BUTTON -- */
 itemInput.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") {
-    createItem(itemInput);
-  };
+  if (e.key === "Enter") createItem(itemInput);
 });
 
 /*-- FUNCTION FOR DELETE BUTTONS --*/
