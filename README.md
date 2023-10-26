@@ -141,19 +141,23 @@ Future features for the webpage are:
 
 #### Results
 
--
+- W3c validator for HTML tests.
 
-- ![HTML Validator Test]()
+- ![HTML Validator Test](./docs/testing/wc3-test-index.png)
+- ![HTML Validator Testpart 2](./docs/testing/wc3-test-index-2.png)
 
-- W3c css validator for CSS code , Jigsaw
 
-![W3c CSS Validator Test]()
+- W3c css validator for CSS code , Jigsaw.
+
+![W3c CSS Validator Test](./docs/testing/wc3-css.png)
+
 
 ### Manual testing
+I tested the website manualy throughout the whole developing progress. The website is tested in Safari, Google Chrome and Brave. The website is also tested from an Iphone.
 
 ## Deployment
 
-I deployed early to ba able to test the website deployed during the development. Following step are a description of how to deploy a webpage on GitHub:
+I deployed early to be able to test the website deployed during the development. Following step are a description of how to deploy a webpage on GitHub:
 
 1. Open the [repository]() and find the Settings tab.
 2. The navigate to the tab called Pages on the left.
@@ -220,4 +224,4 @@ My link is: [FlowFocus]()
 
 ## What I've learned
 
-- While developing this website I've learned
+- While developing this website I've learned a lot a

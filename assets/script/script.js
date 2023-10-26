@@ -2,7 +2,8 @@
 /*-----------------*/
 /*-- CHECK LOCAL STORAGE -- */
 /*------------------*/
-const itemsArray = localStorage.getItem("items")? JSON.parse(localStorage.getItem("items"))
+const itemsArray = localStorage.getItem("items")
+  ? JSON.parse(localStorage.getItem("items"))
   : [];
 
 /*-----------------*/
@@ -104,135 +105,101 @@ slider();
 /*-----------------*/
 /* THIS TO DO LIST FUNCTIONS ARE BASED ON WEB DEV TUTORIALS, LINK IN README */
 
-/*-- QUERY SELECTORS --*/
+/* -- QUERY SELECTORS -- */
 const enterBtn = document.querySelector("#enter");
 const itemInput = document.querySelector("#item");
-const deleteBtn = document.querySelectorAll(".deleteBtn");
-const editBtn = document.querySelectorAll(".editBtn");
-const saveBtn = document.querySelectorAll(".saveBtn");
-const cancelBtn = document.querySelectorAll(".cancelBtn");
-const doneBtn = document.querySelectorAll(".doneBtn");
+const toDoList = document.querySelector(".to-do-list");
 
-const updateControllers = document.querySelectorAll(".update-controller");
-const inputs = document.querySelectorAll(
-  ".input-controller textarea"
-);
-
-/*-- WHEN CLICKING THE BUTTON -- */
-enterBtn.addEventListener("click", () => {
-  createItem(itemInput);
-});
-
-
-/*-- WHEN PRESSING ENTER BUTTON -- */
-itemInput.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") createItem(itemInput);
-});
-
-/*-- FUNCTION FOR DELETE BUTTONS --*/
-function activateDeleteListeners() {
-  deleteBtn.forEach((db, i) => {
-    db.addEventListener("click", () => {
-      deleteItem(i);
-    });
+/*-- INITIALIZE THE TO-DO LIST --*/
+function initializeToDoList() {
+  toDoList.innerHTML = ""; // CLEAR THE LIST
+  itemsArray.forEach((item, index) => {
+    newToDoItem(item, index); // APPEND A TO-DO ITEM
   });
 }
 
-/*-- FUNCTION FOR EDIT BUTTONS --*/
-function activateEditListeners() {
-  editBtn.forEach((eb, i) => {
-    eb.addEventListener("click", () => {
-    updateControllers[i].style.display = "block";
-    inputs[i].disabled = false;
-    });
-  });
+/*-- FUNCTION TO APPEND A TO-DO ITEM TO THE LIST --*/
+function newToDoItem(text, index) {
+  const toDoItem = document.createElement("div");
+  toDoItem.className = "item";
+  toDoItem.innerHTML = `
+    <div class="input-controller">
+      <textarea disabled aria-label="Write items for to-do list" class="itemsText">${text}</textarea>
+      <div class="edit-controller">
+        <i aria-label="Mark as done button" class="fa-solid fa-check doneBtn buttons" onclick="itemDone(${index})"></i>
+        <i aria-label="Delete button" class="fa-solid fa-trash deleteBtn buttons" onclick="deleteItem(${index})"></i>
+        <i aria-label="Edit button" class="fa-solid fa-pen-to-square editBtn buttons" onclick="editItem(${index})"></i>
+      </div>
+    </div>
+    <div class="update-controller" style="display: none;">
+      <button aria-label="Save button" class="saveBtn buttons" onclick="saveItem(${index})">Save</button>
+      <button aria-label="Cancel edit button" class="cancelBtn buttons" onclick="cancelEdit(${index})">Cancel</button>
+    </div>
+  `;
+  toDoList.appendChild(toDoItem);
 }
 
-/* FUNCTION FOR DONE BUTTONS */
-function activateDoneListeners() {
-  doneBtn.forEach((doneBtn, i) => {
-    doneBtn.addEventListener("click", () => {
-      const itemsText = itemsText[i];
-      itemsText.classList.toggle("completed");
-    });
-  });
-}
-
-/*-- FUNCTION FOR SAVE BUTTONS --*/
-function activateSaveListeners() {
-  saveBtn.forEach((sb, i) => {
-    saveBtn.addEventListener("click", () => {
-    updateItem(inputs[i].value, i);
-    });
-  });
-}
-
-/*-- FUNCTION FOR CANCEL BUTTONS --*/
-function activateCancelListeners() {
-  cancelBtn.forEach((cb, i) => {
-    cancelBtn.addEventListener("click", () => {
-    updateControllers[i].style.display = "none";
-    inputs[i].disabled = true;
-    });
-  });
-}
-
-/*-- FUNCTION FOR UPDATE ITEMS --*/
-function updateItem(text, i) {
-  itemsArray[i] = text;
-  localStorage.setItem("items", JSON.stringify(itemsArray));
-  location.reload();
-}
-
-function deleteItem(i) {
-  itemsArray.splice(i, 1);
-  localStorage.setItem("items", JSON.stringify(itemsArray));
-  location.reload();
-}
-
+/*-- FUNCTION TO CREATE A NEW TO-DO ITEM --*/
 function createItem(item) {
   itemsArray.push(item.value);
   localStorage.setItem("items", JSON.stringify(itemsArray));
-  location.reload();
+  initializeToDoList();
+  item.value = "";
 }
 
-/*-- SHOW ON SCREEN -- */
-function displayItems() {
-  let items = "";
-  for (let i = 0; i < itemsArray.length; i++) {
-    items += `
-    <div class="item">
-    <div class="input-controller">
-      <textarea disabled aria-label="Write items for to do list" class="itemsText">${itemsArray[i]}</textarea>
-      <div class="edit-controller">
-        <i aria-label="Mark as done button" class="fa-solid fa-check doneBtn buttons"></i>
-        <i aria-label="Delete button" class="fa-solid fa-trash deleteBtn buttons"></i>
-        <i aria-label="Edit button" class="fa-solid fa-pen-to-square editBtn buttons"></i>
-      </div>
-    </div>
-    <div class="update-controller">
-      <button aria-label="Save button" class="saveBtn buttons">Save</button>
-      <button aria-label="Cancel edit button" class="cancelBtn buttons">Cancel</button>
-    </div>
-  </div>
-    `;
-  }
-  document.querySelector(".to-do-list").innerHTML = items;
-
-  /*AFTER UPDATING THE DOM, ACTIVATE LISTENERS*/
-
-  activateListeners();
+/*-- FUNCTION TO DELETE A TO-DO ITEM --*/
+function deleteItem(index) {
+  itemsArray.splice(index, 1);
+  localStorage.setItem("items", JSON.stringify(itemsArray));
+  initializeToDoList();
 }
 
-/*FUNCTION TO ACTIVATE EVENT LISTENERS FOR DONE,EDIT,DELETE,SAVE AND CANCEL BUTTONS*/
+/*-- FUNCTION TO EDIT A TO-DO ITEM --*/
+function editItem(index) {
+  const editController = document.querySelectorAll(".edit-controller")[index];
+  const updateController =
+    document.querySelectorAll(".update-controller")[index];
+  const itemsText = document.querySelectorAll(".itemsText")[index];
 
-function activateListeners() {
-  activateDoneListeners();
-  activateEditListeners();
-  activateDeleteListeners();
-  activateSaveListeners();
-  activateCancelListeners();
+  editController.style.display = "none";
+  updateController.style.display = "block";
+  itemsText.disabled = false;
 }
+
+/*-- FUNCTION TO SAVE CHANGES TO A TO-DO ITEM --*/
+function saveItem(index) {
+  const itemsText = document.querySelectorAll(".itemsText")[index];
+  itemsArray[index] = itemsText.value;
+  localStorage.setItem("items", JSON.stringify(itemsArray));
+  initializeToDoList();
+}
+
+/*-- FUNCTION TO CANCEL EDITING A TO-DO ITEM --*/
+function cancelEdit(index) {
+  const editController = document.querySelectorAll(".edit-controller")[index];
+  const updateController =
+    document.querySelectorAll(".update-controller")[index];
+  const itemsText = document.querySelectorAll(".itemsText")[index];
+
+  editController.style.display = "block";
+  updateController.style.display = "none";
+  itemsText.disabled = true;
+}
+
+/*-- FUNCTION TO MARK A TO-DO ITEM AS DONE --*/
+function itemDone(index) {
+  const itemsText = document.querySelectorAll(".itemsText")[index];
+  itemsText.classList.toggle("completed");
+}
+
+/*-- INITIALIZE THE TO-DO LIST AND EVENT LISTENERS --*/
+initializeToDoList();
+enterBtn.addEventListener("click", () => {
+  createItem(itemInput);
+});
+itemInput.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") createItem(itemInput);
+});
 
 /*-----------------*/
 /*-- DISPLAY DATE -- */
@@ -246,5 +213,4 @@ function displayDate() {
 
 window.onload = function () {
   displayDate();
-  displayItems();
 };
