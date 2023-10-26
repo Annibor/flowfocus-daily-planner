@@ -96,6 +96,11 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 
 ### Design Philosophy/ Features
 
+- **Homepage**:
+- ![Homepage Desktop](./docs/screenshots/homepage-desktop.png)
+- ![Homepage Tablet](./docs/screenshots/homepage-tablet.png)
+- ![Homepage Mobile](./docs/screenshots/homepage-mobile.png)
+
 - **Header**: A responsive navigation bar,
 
 - ![Header Desktop](./docs/screenshots/header-desktop.png)
@@ -107,6 +112,16 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 ![Slider Desktop](./docs/screenshots/slide-desktop.png)
 ![Slider Tablet](./docs/screenshots/slide-tablet.png)
 ![Slider mobile](./docs/screenshots/slide-mobile.png)
+
+- The slider has dots to indicate what slide your on in the slider.
+
+- ![Dots](./docs/screenshots/dots-showing-slide.png)
+
+- **Todo List**: A responsive todo list.
+
+![Todo List Desktop](./docs/screenshots)
+![Todo List Tablet](./docs/screenshots)
+![Todo List mobile](./docs/screenshots)
 
 ### Future Features
 
@@ -146,13 +161,12 @@ Future features for the webpage are:
 - ![HTML Validator Test](./docs/testing/wc3-test-index.png)
 - ![HTML Validator Testpart 2](./docs/testing/wc3-test-index-2.png)
 
-
 - W3c css validator for CSS code , Jigsaw.
 
 ![W3c CSS Validator Test](./docs/testing/wc3-css.png)
 
-
 ### Manual testing
+
 I tested the website manualy throughout the whole developing progress. The website is tested in Safari, Google Chrome and Brave. The website is also tested from an Iphone.
 
 ## Deployment
@@ -176,7 +190,7 @@ My link is: [FlowFocus]()
 - I've used Visual Studio Code to write the code.
 - I've used Git to load and push my code to Github and for version control.
 - I've used GitHub for repository management.
-- I've used Squoosh.app to compromize all images.
+- I've used Code Pen to test and change my code, without ruining the actual project.
 - I've used preinstalled app called "Prevew" to edit the sizes of the photos.
 - I've used Coolors.co to find a color palette for the website.
 - I've also used Coolors.co to contrast check text colors and background colors.
@@ -214,7 +228,7 @@ My link is: [FlowFocus]()
 
 - This README is based upon two sourses for guidance: one by Davis Calikes, available at [GitHub](https://github.com/davidcalikes/portfolio-project-one#readme), and another authored by me, available at [GitHub](https://github.com/Annibor/EarthEcho-Studios/blob/main/README.md)
 - The slider effect Credit: The captivating slider effect featured in this project is inspired by Jonas Schmedtmann's Advanced DOM Bankist, avalible at [GitHub](https://github.com/jonasschmedtmann/complete-javascript-course/tree/master/13-Advanced-DOM-Bankist).
-- The todo list reference: The ToDo List functionality has been developed based on the educational content from the YouTube video titled "How to Build a Todo List App with Local Storage for Beginners: HTML, CSS & JavaScript." Avaliable at [YouTube](https://www.youtube.com/watch?v=SeKQSQDUMDQ). On  the "Interactive Todo App Created with Pure Vanilla JavaScript HTML/CSS Part II". avalible at  [medium.com](https://medium.com/@bpmikeomo/interactive-todo-app-created-with-pure-vanilla-javascript-html-css-part-ii-d1498b625584). It is based on " Build a todo list in HTML CSS Javascript /easy beginner tutorial". Avaliable at [Youtube](https://www.youtube.com/watch?v=3OqWCGVaOkA).
+- The todo list reference: The ToDo List functionality has been developed based on the educational content from the YouTube video titled "How to Build a Todo List App with Local Storage for Beginners: HTML, CSS & JavaScript." Avaliable at [YouTube](https://www.youtube.com/watch?v=SeKQSQDUMDQ). On the "Interactive Todo App Created with Pure Vanilla JavaScript HTML/CSS Part II". avalible at [medium.com](https://medium.com/@bpmikeomo/interactive-todo-app-created-with-pure-vanilla-javascript-html-css-part-ii-d1498b625584). It is based on " Build a todo list in HTML CSS Javascript /easy beginner tutorial". Avaliable at [Youtube](https://www.youtube.com/watch?v=3OqWCGVaOkA).
 - Usage, Modification, Distrubition, Private Use and Liability Content: The guidelines pertaining to usage, modification, distribution, private use, and liability are directly derived from my project, accessible at [GitHub](https://github.com/Annibor/EarthEcho-Studios/blob/main/README.md)
 
 ### Special Thanks
