@@ -96,20 +96,26 @@ I used [Color Contrast Shecker](https://coolors.co/contrast-checker/112a46-acc8e
 
 - **Header**: A responsive navigation bar,
 
-- ![Header Desktop]()
-- ![Header Tablet]()
-- ![Header Mobile]()
-- ![Navigation buttons Mobile]()
+- ![Header Desktop](./docs/screenshots/header-desktop.png)
+- ![Header Tablet](./docs/screenshots/header-tablet.png)
+- ![Header Mobile](./docs/screenshots/header-mobile.png)
 
-- **Home Page**:
+- **Slider**: A responsive slider section.
 
-![Home page]()
-![Home page]()
-![Home page]()
+![Slider Desktop](./docs/screenshots/slide-desktop.png)
+![Slider Tablet](./docs/screenshots/slide-tablet.png)
+![Slider mobile](./docs/screenshots/slide-mobile.png)
 
 ### Future Features
 
 Future features for the webpage are:
+
+- A footer with links to social media.
+- Being able to mark todo'd as important.
+- A way to get reminders of todo's the user mark as important.
+- Add audio for button clicks.
+- Make heading and subheading gradient in color.
+- A function to share lists with others.
 
 ## Testing
 
