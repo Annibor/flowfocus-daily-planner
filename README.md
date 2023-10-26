@@ -1,6 +1,6 @@
 # FlowFocus: Daily Planner
 
-![FlowFocus: Daily Planner]()
+![FlowFocus: Daily Planner](https://annibor.github.io/flowfocus-daily-planner/)
 
 # Introduction
 
@@ -74,6 +74,8 @@ I created my wireframes for the website by using [Balsamiq](https://balsamiq.com
   #715AFF
   #A682FF
 
+I've embraced various shades of blue to align with the design principle of "Less is more." Blue is universally favored, and it provides an elegant contrast to the white text, creating a clean and stylish visual.
+
 - ![Color palette](./docs/screenshots/color-palette.png)
 
 I used [Tint and Shades](https://maketintsandshades.com/) to find different tints and shades of the colors from the original color palette. The shades used on this site were: #1A0066
@@ -113,6 +115,10 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 ![Slider Desktop](./docs/screenshots/slide-desktop.png)
 ![Slider Tablet](./docs/screenshots/slide-tablet.png)
 ![Slider mobile](./docs/screenshots/slide-mobile.png)
+
+- The app automaticly dispalys todays date on the page.
+
+- ![Date](./docs/screenshots/todays-date.png)
 
 - The slider has dots to indicate what slide your on in the slider.
 
