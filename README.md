@@ -73,19 +73,21 @@ I created my wireframes for the website by using [Balsamiq](https://balsamiq.com
   #715AFF
   #A682FF
 
-- ![Color palette]()
+- ![Color palette](./docs/screenshots/color-palette.png)
 
 I used [Tint and Shades](https://maketintsandshades.com/) to find different tints and shades of the colors from the original color palette. The shades used on this site were: #1A0066
 #002EA3
 #500AFF
 
-- ![Shades]()
+- ![Shades](./docs/screenshots/tint-shades-palette.png)
 
 I used [Color Contrast Shecker](https://coolors.co/contrast-checker/112a46-acc8e5) to make sure I used colors that had good contrast to eachother.
 
-- ![Color Contrast]()
+- ![Color Contrast](./docs/screenshots/color-contrast-checker.png)
 
--
+I used [CSS Gradient](https://cssgradient.io/) to make the gradient background for the page.
+
+- ![CSS Gradient](./docs/screenshots/cssgradient-for-background.png)
 
 ### Fonts
 
