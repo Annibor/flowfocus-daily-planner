@@ -103,7 +103,7 @@ slider();
 /*-----------------*/
 /*-- ADD TO LIST -- */
 /*-----------------*/
-/* THIS TO DO LIST FUNCTIONS ARE BASED ON WEB DEV TUTORIALS, LINK IN README */
+/* THIS TO DO LIST FUNCTIONS ARE BASED ON WEB DEV TUTORIALS, MEDIUM.COM TUTORIAL," BUILD A TODO LIST APP IN HTML CSS JAVASCRIPT EASY BEGINNER TUTORIALl", LINKS IN README */
 
 /* -- QUERY SELECTORS -- */
 const enterBtn = document.querySelector("#enter");
@@ -112,9 +112,9 @@ const toDoList = document.querySelector(".to-do-list");
 
 /*-- INITIALIZE THE TO-DO LIST --*/
 function initializeToDoList() {
-  toDoList.innerHTML = ""; // CLEAR THE LIST
+  toDoList.innerHTML = ""; 
   itemsArray.forEach((item, index) => {
-    newToDoItem(item, index); // APPEND A TO-DO ITEM
+    newToDoItem(item, index); 
   });
 }
 
