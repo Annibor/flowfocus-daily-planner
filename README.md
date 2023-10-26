@@ -17,26 +17,18 @@ Welcome to FlowFocus, your daily planner to help you achivie your goals, reduce 
     - [**Wireframes**](#wireframes)
       - [**Home Page**](#home-page)
     - [**Colors**](#colors)
-    - [**Fonts**](#fonts) 
-    -[**Design Philosophy/ Features**](#design-philosophy-features)
-  - [**Testing**](#testing) 
-    -[**Devtools**](#devtools)
+    - [**Fonts**](#fonts) -[**Design Philosophy/ Features**](#design-philosophy-features)
+  - [**Testing**](#testing) -[**Devtools**](#devtools)
     - [**Ligthouse**](#lighthouse)
       - [**Issues**](#issues)
       - [**Results**](#results)
   - [**Deployment**](#deployment)
   - [**Languages**](#languages)
   - [**Software**](#software)
-  - [**Media**](#media) 
-  -[**Usage**](#usage) 
-   -[**Modification**](#modification) 
-   -[**Distribution**](#distrubition) 
-   -[**Private Use**](#private-use) 
-   -[**Liability**](#liability)
+  - [**Media**](#media) -[**Usage**](#usage) -[**Modification**](#modification) -[**Distribution**](#distrubition) -[**Private Use**](#private-use) -[**Liability**](#liability)
   - [**Credits**](#credits)
-   - [**Content**](#content)
-   - [**Special thanks**](#special-thanks) 
-  -[**What I've learned**](#what-ive-learned)
+  - [**Content**](#content)
+  - [**Special thanks**](#special-thanks) -[**What I've learned**](#what-ive-learned)
 
 ## Planning & developmnet
 
@@ -182,13 +174,13 @@ I tested the website manualy throughout the whole developing progress. The websi
 
 I deployed early to be able to test the website deployed during the development. Following step are a description of how to deploy a webpage on GitHub:
 
-1. Open the [repository]() and find the Settings tab.
+1. Open the [repository](https://github.com/Annibor/flowfocus-daily-planner) and find the Settings tab.
 2. The navigate to the tab called Pages on the left.
 3. Choose to Deploy from a branch. For me it was the main branch.
-4. Save it. It can take a few minutes, but then you will be able to find the link to the deployed website in the repository on the menu to the right, under [Deplyments]().
+4. Save it. It can take a few minutes, but then you will be able to find the link to the deployed website in the repository on the menu to the right, under [Deployments](https://github.com/Annibor/flowfocus-daily-planner/deployments).
 5. There you'll find the daployes website no top of the page under the heading Active deployments.
 
-My link is: [FlowFocus]()
+My link is: [FlowFocus](https://annibor.github.io/flowfocus-daily-planner/)
 
 ## Languages
 
