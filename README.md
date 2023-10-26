@@ -110,7 +110,7 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 - ![Header Tablet](./docs/screenshots/header-tablet.png)
 - ![Header Mobile](./docs/screenshots/header-mobile.png)
 
-- **Slider**: A responsive slider section.
+- **Slider**: A responsive slider section. You can flip through the slide by clicking the arrow buttons, but you can also flip through them buy clicking the left or right arrow key on your keyboard.
 
 ![Slider Desktop](./docs/screenshots/slide-desktop.png)
 ![Slider Tablet](./docs/screenshots/slide-tablet.png)
@@ -130,9 +130,17 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 ![Todo List Tablet](./docs/screenshots)
 ![Todo List mobile](./docs/screenshots)
 
+-**Enter Task**: In this input, you can write your task, andd then simply click on the button called eneter, or the enter key on your you keyboard.
+
+![Enter task](./docs/screenshots/enter-task.png)
+
 -**Done**: Once your done with one task, and click on the check,the task gets a line over it, to clearly mark it as done.
 
 ![Line-through when marked as done](./docs/screenshots/marked-done.png)
+
+-**Edit**: If you want to change or edit one task, you just click on the edit button, that opens the textarea again, adn this time with a save and cancel button as well.
+
+![Edit a task, and save and cancel buttons.](./docs/screenshots/edit-buttons.png)
 
 ### Future Features
 
