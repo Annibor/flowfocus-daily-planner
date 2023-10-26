@@ -6,7 +6,7 @@
 
 Welcome to FlowFocus, your daily planner to help you achivie your goals, reduce stress and get more organized. In the society we live in today it's easy to feek overwhelmed by responsibilities and evaryday things that triggers stress. FlowFocus is the app thats her to help youm to get a more organized everyday life, so you can save your energy for what matters to you, stay in the flow and boost your productivity effortlessly.
 
-![Am I Responsive Screenshot]()
+![Am I Responsive Screenshot](./docs/screenshots/am-i-responsive.png)
 
 ## Table of Content
 
@@ -17,17 +17,26 @@ Welcome to FlowFocus, your daily planner to help you achivie your goals, reduce 
     - [**Wireframes**](#wireframes)
       - [**Home Page**](#home-page)
     - [**Colors**](#colors)
-    - [**Fonts**](#fonts) -[**Design Philosophy/ Features**](#design-philosophy-features)
-  - [**Testing**](#testing) -[**Devtools**](#devtools)
+    - [**Fonts**](#fonts) 
+    -[**Design Philosophy/ Features**](#design-philosophy-features)
+  - [**Testing**](#testing) 
+    -[**Devtools**](#devtools)
     - [**Ligthouse**](#lighthouse)
       - [**Issues**](#issues)
       - [**Results**](#results)
   - [**Deployment**](#deployment)
   - [**Languages**](#languages)
   - [**Software**](#software)
-  - [**Media**](#media) -[**Usage**](#usage) -[**Modification**](#modification) -[**Distribution**](#distrubition) -[**Private Use**](#private-use) -[**Liability**](#liability)
+  - [**Media**](#media) 
+  -[**Usage**](#usage) 
+   -[**Modification**](#modification) 
+   -[**Distribution**](#distrubition) 
+   -[**Private Use**](#private-use) 
+   -[**Liability**](#liability)
   - [**Credits**](#credits)
-  - [**Special thanks**](#special-thanks) -[**What I've learned**](#what-ive-learned)
+   - [**Content**](#content)
+   - [**Special thanks**](#special-thanks) 
+  -[**What I've learned**](#what-ive-learned)
 
 ## Planning & developmnet
 
@@ -233,9 +242,28 @@ My link is: [FlowFocus]()
 
 ### Special Thanks
 
-- **Michel**: My boyfriend
-- **Anthony**: My mentor who've been helping me during the developmentprocess.
+I would like to express my gratitude to the following individuals who have made a meaningful impact on this project:
 
-## What I've learned
+- **Michel**: My wonderful boyfriend, whose unwavering support and encouragement have been my constant motivation.
 
-- While developing this website I've learned a lot a
+- **Anthony**: My mentor and guide throughout this development journey. Anthony's expertise and insights have been invaluable, contributing significantly to the success of this project.
+
+I am deeply thankful to these remarkable individuals for their significant contributions to this project.
+
+## What I've Learned
+
+During the development of this project, I've gained valuable insights and skills that have enriched my coding journey. Here are some of the key takeaways:
+
+- **Testing in CodePen**: I've learned the importance of using tools like CodePen to test and experiment with code snippets. This practice ensures that I don't inadvertently disrupt working code in my projects.
+
+- **Creating Gradient Backgrounds**: I've acquired the ability to design eye-catching gradient backgrounds in my web projects. This skill has allowed me to enhance the visual appeal of my websites.
+
+- **Utilizing JavaScript**: While I'm far from being an expert, I've deepened my understanding of JavaScript and how it can be leveraged to create interactive and dynamic web content. I'm continually working to improve my JavaScript skills.
+
+- **Continuous Learning**: I've come to realize that web development is an ever-evolving field, and there's always more to learn. This project has motivated me to explore new concepts, libraries, and techniques continuously.
+
+- **Adaptability and Idea Generation**: I've learned the importance of adaptability in the face of project challenges. If the initial idea proves to be too time-consuming or impractical, I've come to realize that it's okey to focus on other new ideas and solutions.
+
+- **Effective Information Search**: My ability to search for and find relevant information on the web has improved significantly. Learning how to access and use online resources efficiently has been a crucial skill in this project.
+
+These lessons have not only contributed to the finnishing of this project but have also improved my overall coding proficiency. I'm looking forward to applying these skills to future projects.
