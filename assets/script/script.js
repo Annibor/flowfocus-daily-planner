@@ -1,9 +1,9 @@
 /*jshint esversion: 6 */
+/*exported deleteitem, editItem, deleteItem,saveItem, cancelEdit, itemDone*/
 /*-----------------*/
 /*-- CHECK LOCAL STORAGE -- */
 /*------------------*/
-const itemsArray = localStorage.getItem("items")
-  ? JSON.parse(localStorage.getItem("items"))
+const itemsArray = localStorage.getItem("items")? JSON.parse(localStorage.getItem("items"))
   : [];
 
 /*-----------------*/

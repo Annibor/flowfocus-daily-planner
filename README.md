@@ -130,6 +130,10 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 ![Todo List Tablet](./docs/screenshots)
 ![Todo List mobile](./docs/screenshots)
 
+-**Done**: Once your done with one task, and click on the check,the task gets a line over it, to clearly mark it as done.
+
+![Line-through when marked as done](./docs/screenshots/marked-done.png)
+
 ### Future Features
 
 Future features for the webpage are:
