@@ -129,11 +129,13 @@ Future features for the webpage are:
 
 ### Lighthouse
 
--
+- ![Lighthouse test Desktop](./docs/testing/lighthouse-test-desktop.png)
+- ![Lighthouse test Mobile](./docs/testing/lighthouse-test-mobile.png)
 
 #### Issues
 
--
+- I hade some issues with a section that was missing a heading, and I got a warning in w3c Validator. So I changed the section to a div, in order to get rid of the warning, because I did'nt want to put a heading there.
+- ![W3c issue with section without heading](./docs/testing/warning-of-heading-wc3.png)
 
 -
 
