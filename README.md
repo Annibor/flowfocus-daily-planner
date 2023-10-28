@@ -173,6 +173,10 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 
 - ![Edit a task, and save and cancel buttons.](./docs/screenshots/edit-buttons.png)
 
+-**Alert When Empty Task**: If you try to add task to the list, you will get a message that you need to enter a task before beeing able to add it to the list. This is to prevent empty taks to take up place in the list.
+
+- ![Alert about need to add content to input](./docs/screenshots/alert-when-empty-task.png)
+
 ### Future Features
 
 Future features for the webpage are:

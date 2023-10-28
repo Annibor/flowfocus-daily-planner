@@ -149,7 +149,7 @@ function createItem(item) {
     initializeToDoList();
     item.value = "";
   } else {
-    alert("Please enter a task before addding it to the list.");
+    alert("Please enter a task before adding it to the list.");
   }
 }
 
