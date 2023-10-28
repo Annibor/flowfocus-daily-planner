@@ -177,11 +177,12 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 Future features for the webpage are:
 
 - A footer with links to social media.
-- Being able to mark todo'd as important.
+- Being able to mark tasks as important.
 - A way to get reminders of todo's the user mark as important.
-- Add audio for button clicks.
+- Add audio for buttons when clicked.
 - Make heading and subheading gradient in color.
 - A function to share lists with others.
+- Fix user can arrange the tasks in chronological order for when they want to finnish the tasks.
 
 ## Testing
 

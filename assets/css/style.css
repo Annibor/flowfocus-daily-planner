@@ -16,30 +16,6 @@ html {
 }
 
 /* -----------------------*/
-/* --- COLORS USED --- */
-/* -----------------------*/
-/*
-Primary:
-#102E4A
-#55C1FF
-#5887FF
-#715AFF
-#A682FF
-
-
-TINTS:
-#F0EBFF
-#EBF8FF
-SHADES:
-#1A0066
-#002EA3
-#500AFF
-#225378
-#3378A5
-
-*/
-
-/* -----------------------*/
 /* --- General styles --- */
 /* -----------------------*/
 
@@ -56,15 +32,6 @@ body {
     rgba(10, 35, 87, 1) 81%,
     rgba(85, 59, 150, 1) 97%
   );
-  /*
-  background: rgb(253, 29, 29);
-  background: linear-gradient(
-    90deg,
-    rgba(253, 29, 29, 1) 0%,
-    rgba(253, 39, 32, 1) 0%,
-    rgba(131, 58, 180, 1) 77%,
-    rgba(252, 176, 69, 1) 100%
-  ); */
   color: #fff;
 }
 
@@ -297,7 +264,7 @@ h4 {
   cursor: pointer;
 }
 
-/* MAKE TASKE GET LINE THROUGH TEXT WHEN DONE*/
+/* MAKE TASK GET LINE THROUGH TEXT WHEN DONE*/
 .completed {
   text-decoration: line-through;
   color: rgba(255, 255, 255, 0.8);
