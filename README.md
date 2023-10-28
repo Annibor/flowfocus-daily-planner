@@ -142,9 +142,9 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 
 - **Slider**: A responsive slider section. You can flip through the slide by clicking the arrow buttons, but you can also flip through them buy clicking the left or right arrow key on your keyboard.
 
-![Slider Desktop](./docs/screenshots/slide-desktop.png)
-![Slider Tablet](./docs/screenshots/slide-tablet.png)
-![Slider mobile](./docs/screenshots/slide-mobile.png)
+- ![Slider Desktop](./docs/screenshots/slide-desktop.png)
+- ![Slider Tablet](./docs/screenshots/slide-tablet.png)
+- ![Slider mobile](./docs/screenshots/slide-mobile.png)
 
 - The app automaticly dispalys todays date on the page.
 
@@ -156,21 +156,21 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 
 - **Todo List**: A responsive todo list.
 
-![Todo List Desktop](./docs/screenshots/todo-list-desktop.png)
-![Todo List Tablet](./docs/screenshots/todo-list-tablet.png)
-![Todo List mobile](./docs/screenshots/todo-list-mobile.png)
+- ![Todo List Desktop](./docs/screenshots/todo-list-desktop.png)
+- ![Todo List Tablet](./docs/screenshots/todo-list-tablet.png)
+- ![Todo List mobile](./docs/screenshots/todo-list-mobile.png)
 
 - **Enter Task**: In this input, you can write your task, andd then simply click on the button called eneter, or the enter key on your you keyboard.
 
-![Enter task](./docs/screenshots/enter-task.png)
+- ![Enter task](./docs/screenshots/enter-task.png)
 
 - **Done**: Once your done with one task, and click on the check,the task gets a line over it, to clearly mark it as done.
 
-![Line-through when marked as done](./docs/screenshots/marked-done.png)
+- ![Line-through when marked as done](./docs/screenshots/marked-done.png)
 
 -**Edit**: If you want to change or edit one task, you just click on the edit button, that opens the textarea again, adn this time with a save and cancel button as well.
 
-![Edit a task, and save and cancel buttons.](./docs/screenshots/edit-buttons.png)
+- ![Edit a task, and save and cancel buttons.](./docs/screenshots/edit-buttons.png)
 
 ### Future Features
 
@@ -214,11 +214,11 @@ Future features for the webpage are:
 
 - W3c css validator for CSS code , Jigsaw.
 
-![W3c CSS Validator Test](./docs/testing/wc3-css.png)
+- ![W3c CSS Validator Test](./docs/testing/wc3-css.png)
 
 - JSHint test for Javascript code.
 
-![JASHint test](./docs/testing/jshint-test.png)
+- ![JASHint test](./docs/testing/jshint-test.png)
 
 ### Manual testing
 
