@@ -10,7 +10,7 @@ const itemsArray = localStorage.getItem("items")? JSON.parse(localStorage.getIte
 /*-----------------*/
 /*-- SLIDER TIPS -- */
 /*-----------------*/
-/*-- The slider is based on Jonas Schmedtmann Bankist, link in README --*/
+/*-- The slider is inspired and based on Jonas Schmedtmann Bankist, link in README --*/
 const slider = function () {
   const slides = document.querySelectorAll(".slide");
 
