@@ -14,9 +14,11 @@ const itemsArray = localStorage.getItem("items")
 /*-- The slider is based on Jonas Schmedtmann Bankist, link in README --*/
 const slider = function () {
   const slides = document.querySelectorAll(".slide");
+
   /*-- SLIDE BTNS -- */
   const leftBtn = document.querySelector(".slider__btn--left");
   const rightBtn = document.querySelector(".slider__btn--right");
+
   /*-- SLIDE DOTS -- */
   const dotContainer = document.querySelector(".dots");
 
