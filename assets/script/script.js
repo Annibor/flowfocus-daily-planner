@@ -4,7 +4,8 @@
 /*-----------------*/
 /*-- CHECK LOCAL STORAGE -- */
 /*------------------*/
-const itemsArray = localStorage.getItem("items")? JSON.parse(localStorage.getItem("items"))
+const itemsArray = localStorage.getItem("items")
+  ? JSON.parse(localStorage.getItem("items"))
   : [];
 
 /*-----------------*/
@@ -113,9 +114,9 @@ const toDoList = document.querySelector(".to-do-list");
 
 /*-- INITIALIZE THE TO-DO LIST --*/
 function initializeToDoList() {
-  toDoList.innerHTML = ""; 
+  toDoList.innerHTML = "";
   itemsArray.forEach((item, index) => {
-    newToDoItem(item, index); 
+    newToDoItem(item, index);
   });
 }
 
@@ -140,12 +141,16 @@ function newToDoItem(text, index) {
   toDoList.appendChild(toDoItem);
 }
 
-/*-- FUNCTION TO CREATE A NEW TO-DO ITEM --*/
+/*-- FUNCTION TO CREATE A NEW TO-DO ITEM, ALERT IF TRYING TO ADD EMPTY TASK TO LIST--*/
 function createItem(item) {
-  itemsArray.push(item.value);
-  localStorage.setItem("items", JSON.stringify(itemsArray));
-  initializeToDoList();
-  item.value = "";
+  if (item.value.trim() !== "") {
+    itemsArray.push(item.value);
+    localStorage.setItem("items", JSON.stringify(itemsArray));
+    initializeToDoList();
+    item.value = "";
+  } else {
+    alert("Please enter a task before addding it to the list.");
+  }
 }
 
 /*-- FUNCTION TO DELETE A TO-DO ITEM --*/

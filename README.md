@@ -19,6 +19,7 @@ Welcome to FlowFocus, your daily planner to help you achivie your goals, reduce 
     - [**Colors**](#colors)
     - [**Fonts**](#fonts)
     - [**Design Philosophy/ Features**](#design-philosophy-features)
+    - [**Future Features**](#future-features)
   - [**Testing**](#testing)
   - [**Devtools**](#devtools)
     - [**Ligthouse**](#lighthouse)
