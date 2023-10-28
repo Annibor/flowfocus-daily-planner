@@ -1,6 +1,6 @@
 # FlowFocus: Daily Planner
 
-![FlowFocus: Daily Planner](https://annibor.github.io/flowfocus-daily-planner/)
+[FlowFocus: Daily Planner](https://annibor.github.io/flowfocus-daily-planner/)
 
 # Introduction
 
@@ -62,9 +62,31 @@ I created my wireframes for the website by using [Balsamiq](https://balsamiq.com
 
 #### **Home page**
 
-- [Wireframes for mobile]()
-- [Wireframes for tablet]()
-- [Wireframes for desktop]()
+- ![Wireframes for desktop](./docs/wireframes/homepage-desktop-wireframes.png)
+- ![Wireframes for tablet](./docs/wireframes/homepage-tablet-wireframes.png)
+- ![Wireframes for mobile](./docs/wireframes/homepage-mobile-wireframe.png)
+
+#### **When Task added**
+
+- ![Wireframes for desktop](./docs/wireframes/add-task-desktop-wireframe.png)
+- ![Wireframes for tablet](./docs/wireframes/add-task-tablet-wireframe.png)
+- ![Wireframes for mobile](./docs/wireframes/add-task-mobile-wireframe.png)
+
+#### **Change slide**
+
+- ![Wireframes for add a task](./docs/wireframes/change-slider-wireframe.png)
+
+#### **Add task**
+
+- ![Wireframes for add a task](./docs/wireframes/enter-task-wireframe.png)
+
+#### **When task is done**
+
+- ![Wireframes for when task is done](./docs/wireframes/click-check-wireframe.png)
+
+#### **Edit button**
+
+- ![Wireframes for edit button](./docs/wireframes/edit-button-wireframe.png)
 
 ### Colors
 
@@ -229,11 +251,11 @@ My link is: [FlowFocus](https://annibor.github.io/flowfocus-daily-planner/)
 
 ## Usage
 
-- This project is available for viewing and may be used for educational purposes.
+- This project is available for viewing and can be used for educational purposes.
 
 ## Modification
 
-- Modification, including altering, transforming or extending of this project is not permitted fon any commercial or public purposes without explicit permission.
+- Any modification, transformation, or extension of this project for commercial or public purposes is not allowed without explicit permission.
 
 ## Distrubition
 
