@@ -4,7 +4,7 @@
 
 # Introduction
 
-Welcome to FlowFocus, your daily planner to help you achivie your goals, reduce stress and get more organized. In the society we live in today it's easy to feek overwhelmed by responsibilities and evaryday things that triggers stress. FlowFocus is the app thats her to help youm to get a more organized everyday life, so you can save your energy for what matters to you, stay in the flow and boost your productivity effortlessly.
+Welcome to FlowFocus, your daily planner to help you achivie your goals, reduce stress and get more organized. In the society we live in today it's easy to feel overwhelmed by responsibilities and evaryday things that triggers stress. FlowFocus is the app thats her to help youm to get a more organized everyday life, so you can save your energy for what matters to you, stay in the flow and boost your productivity effortlessly.
 
 ![Am I Responsive Screenshot](./docs/screenshots/am-i-responsive.png)
 
@@ -17,24 +17,32 @@ Welcome to FlowFocus, your daily planner to help you achivie your goals, reduce 
     - [**Wireframes**](#wireframes)
       - [**Home Page**](#home-page)
     - [**Colors**](#colors)
-    - [**Fonts**](#fonts) -[**Design Philosophy/ Features**](#design-philosophy-features)
-  - [**Testing**](#testing) -[**Devtools**](#devtools)
+    - [**Fonts**](#fonts)
+    - [**Design Philosophy/ Features**](#design-philosophy-features)
+  - [**Testing**](#testing)
+  - [**Devtools**](#devtools)
     - [**Ligthouse**](#lighthouse)
       - [**Issues**](#issues)
       - [**Results**](#results)
   - [**Deployment**](#deployment)
   - [**Languages**](#languages)
   - [**Software**](#software)
-  - [**Media**](#media) -[**Usage**](#usage) -[**Modification**](#modification) -[**Distribution**](#distrubition) -[**Private Use**](#private-use) -[**Liability**](#liability)
+  - [**Media**](#media)
+  - [**Usage**](#usage)
+  - [**Modification**](#modification)
+  - [**Distribution**](#distrubition)
+  - [**Private Use**](#private-use)
+  - [**Liability**](#liability)
   - [**Credits**](#credits)
   - [**Content**](#content)
-  - [**Special thanks**](#special-thanks) -[**What I've learned**](#what-ive-learned)
+  - [**Special thanks**](#special-thanks)
+  - [**What I've learned**](#what-ive-learned)
 
 ## Planning & developmnet
 
 ### Project Goals
 
-My primary goal with FLowFocus was to cfreate a user-friendly and effective everyday planner, that could help users to organize their tasks ans enhance their productivity. One goal was to provide a solution that encourage self-care, task proritization and goal setting for users to ease their everyday stress.
+My primary goal with FLowFocus was to create a user-friendly and effective everyday planner, that could help users to organize their tasks ans enhance their productivity. One goal was to provide a solution that encourage self-care, task proritization and goal setting for users to ease their everyday stress.
 
 ### User-Centered Approach
 
@@ -42,7 +50,7 @@ The user is placed in the center of the development process, to make sure that t
 
 #### As a General user
 
--FlowFocus is for anyone that is looking for a way to get more organzed in their everyday life.
+- FlowFocus is for anyone that is looking for a way to get more organzed in their everyday life.
 
 #### As a Student
 
@@ -62,31 +70,31 @@ I created my wireframes for the website by using [Balsamiq](https://balsamiq.com
 
 #### **Home page**
 
-- ![Wireframes for desktop](./docs/wireframes/homepage-desktop-wireframes.png)
-- ![Wireframes for tablet](./docs/wireframes/homepage-tablet-wireframes.png)
-- ![Wireframes for mobile](./docs/wireframes/homepage-mobile-wireframe.png)
+- [Wireframes for desktop](./docs/wireframes/homepage-desktop-wireframes.png)
+- [Wireframes for tablet](./docs/wireframes/homepage-tablet-wireframes.png)
+- [Wireframes for mobile](./docs/wireframes/homepage-mobile-wireframe.png)
 
 #### **When Task added**
 
-- ![Wireframes for desktop](./docs/wireframes/add-task-desktop-wireframe.png)
-- ![Wireframes for tablet](./docs/wireframes/add-task-tablet-wireframe.png)
-- ![Wireframes for mobile](./docs/wireframes/add-task-mobile-wireframe.png)
+- [Wireframes for desktop](./docs/wireframes/add-task-desktop-wireframe.png)
+- [Wireframes for tablet](./docs/wireframes/add-task-tablet-wireframe.png)
+- [Wireframes for mobile](./docs/wireframes/add-task-mobile-wireframe.png)
 
 #### **Change slide**
 
-- ![Wireframes for add a task](./docs/wireframes/change-slider-wireframe.png)
+- [Wireframes to change slide](./docs/wireframes/change-slider-wireframe.png)
 
 #### **Add task**
 
-- ![Wireframes for add a task](./docs/wireframes/enter-task-wireframe.png)
+- [Wireframes for add a task](./docs/wireframes/enter-task-wireframe.png)
 
 #### **When task is done**
 
-- ![Wireframes for when task is done](./docs/wireframes/click-check-wireframe.png)
+- [Wireframes for when task is done](./docs/wireframes/click-check-wireframe.png)
 
 #### **Edit button**
 
-- ![Wireframes for edit button](./docs/wireframes/edit-button-wireframe.png)
+- [Wireframes for edit button](./docs/wireframes/edit-button-wireframe.png)
 
 ### Colors
 
@@ -152,11 +160,11 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 ![Todo List Tablet](./docs/screenshots)
 ![Todo List mobile](./docs/screenshots)
 
--**Enter Task**: In this input, you can write your task, andd then simply click on the button called eneter, or the enter key on your you keyboard.
+- **Enter Task**: In this input, you can write your task, andd then simply click on the button called eneter, or the enter key on your you keyboard.
 
 ![Enter task](./docs/screenshots/enter-task.png)
 
--**Done**: Once your done with one task, and click on the check,the task gets a line over it, to clearly mark it as done.
+- **Done**: Once your done with one task, and click on the check,the task gets a line over it, to clearly mark it as done.
 
 ![Line-through when marked as done](./docs/screenshots/marked-done.png)
 
@@ -244,6 +252,7 @@ My link is: [FlowFocus](https://annibor.github.io/flowfocus-daily-planner/)
 - I've used maketintsandshades.com to find evetuals tints and shadow colors as a complement for the color palette.
 - I've used Balsamiq when I made the wireframes for the website.
 - I've used cssgradient.io to make the background gradient.
+- I've used Chat GPT and google translate for some translations and questions.
 
 ## Media
 
