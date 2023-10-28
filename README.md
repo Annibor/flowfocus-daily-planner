@@ -134,7 +134,7 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 - ![Homepage Tablet](./docs/screenshots/homepage-tablet.png)
 - ![Homepage Mobile](./docs/screenshots/homepage-mobile.png)
 
-- **Header**: A responsive navigation bar,
+- **Header**: A responsive navigation bar.
 
 - ![Header Desktop](./docs/screenshots/header-desktop.png)
 - ![Header Tablet](./docs/screenshots/header-tablet.png)
