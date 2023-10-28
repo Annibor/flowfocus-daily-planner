@@ -62,11 +62,11 @@ The user is placed in the center of the development process, to make sure that t
 
 #### As a New User
 
-- If your new to FLowFocus, you'll discover a welcoming and easy navigated interface. The app is designed with the mind of "Less is more", to make sure that nothing easily could distract the user.
+- If you're new to FLowFocus, you'll discover a welcoming and easy navigated interface. The app is designed with the mind of "Less is more", to make sure that nothing easily could distract the user.
 
 ### Wireframes
 
-I created my wireframes for the website by using [Balsamiq](https://balsamiq.com/). I created one wireframe for mobile, tablet and desktop on each page of the website.
+I've created my wireframes for the website by using [Balsamiq](https://balsamiq.com/). I created one wireframe for mobile, tablet and desktop on each page of the website.
 
 #### **Home page**
 
