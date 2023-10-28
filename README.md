@@ -156,9 +156,9 @@ I used [CSS Gradient](https://cssgradient.io/) to make the gradient background f
 
 - **Todo List**: A responsive todo list.
 
-![Todo List Desktop](./docs/screenshots)
-![Todo List Tablet](./docs/screenshots)
-![Todo List mobile](./docs/screenshots)
+![Todo List Desktop](./docs/screenshots/todo-list-desktop.png)
+![Todo List Tablet](./docs/screenshots/todo-list-tablet.png)
+![Todo List mobile](./docs/screenshots/todo-list-mobile.png)
 
 - **Enter Task**: In this input, you can write your task, andd then simply click on the button called eneter, or the enter key on your you keyboard.
 
